@@ -23,7 +23,7 @@
 					</xsd:sequence>
 				</xsd:complexType>
 			</xsd:element>
-		</xsd:schema>
+        </xsd:schema>
 	</wsdl:types>
 
 	<wsdl:message name="SampleServiceOperationRequest">

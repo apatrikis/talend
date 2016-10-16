@@ -33,14 +33,14 @@
 		<wsdl:part name="parameters" element="tns:sayHelloResponse"></wsdl:part>
 	</wsdl:message>
 
-	<wsdl:portType name="SampleServicePortType">
+	<wsdl:portType name="SampleServiceInterface">
 		<wsdl:operation name="sayHello">
 			<wsdl:input message="tns:sayHelloRequest"></wsdl:input>
 			<wsdl:output message="tns:sayHelloResponse"></wsdl:output>
 		</wsdl:operation>
 	</wsdl:portType>
 
-	<wsdl:binding name="SampleServiceBinding" type="tns:SampleServicePortType">
+	<wsdl:binding name="SampleServiceBinding" type="tns:SampleServiceInterface">
 		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
 		<wsdl:operation name="sayHello">
 			<soap:operation soapAction="http://www.talend.org/service/sayHello" />

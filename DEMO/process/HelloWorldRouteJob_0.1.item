@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <parameters>
+    <routinesParameter id="_8q8PUKN8EeaTP9NNc_eyRQ" name="DQTechnical"/>
+    <routinesParameter id="_8qsXsKN8EeaTP9NNc_eyRQ" name="DataMasking"/>
+    <routinesParameter id="_8rPxUKN8EeaTP9NNc_eyRQ" name="DataOperation"/>
+    <routinesParameter id="_8q0TgKN8EeaTP9NNc_eyRQ" name="DataQualityDependencies"/>
+    <routinesParameter id="_8qvbAKN8EeaTP9NNc_eyRQ" name="DataQuality"/>
+    <routinesParameter id="_8q5MAKN8EeaTP9NNc_eyRQ" name="DqStringHandling"/>
+    <routinesParameter id="_8jYOwKN8EeaTP9NNc_eyRQ" name="MDM"/>
+    <routinesParameter id="_8rXGEKN8EeaTP9NNc_eyRQ" name="Mathematical"/>
+    <routinesParameter id="_8raJYKN8EeaTP9NNc_eyRQ" name="Numeric"/>
+    <routinesParameter id="_8rfB4KN8EeaTP9NNc_eyRQ" name="Relational"/>
+    <routinesParameter id="_8rBH0KN8EeaTP9NNc_eyRQ" name="SQLike"/>
+    <routinesParameter id="_8riFMKN8EeaTP9NNc_eyRQ" name="StringHandling"/>
+    <routinesParameter id="_8rm9sKN8EeaTP9NNc_eyRQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_8rtEUKN8EeaTP9NNc_eyRQ" name="TalendDate"/>
+    <routinesParameter id="_8ryj4KN8EeaTP9NNc_eyRQ" name="TalendString"/>
+  </parameters>
+</talendfile:ProcessType>

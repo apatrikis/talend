@@ -118,6 +118,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
       <elementValue elementRef="VALUE" value="&quot;${in.body}&quot;"/>
     </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Route Input"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRouteInput_1">
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
@@ -142,6 +143,7 @@
       <elementValue elementRef="VALUE" value=""/>
     </elementParameter>
     <elementParameter field="LABEL" name="NOTICE" value="The &quot;Name&quot; with &quot;Body&quot; type will be ignored"/>
+    <elementParameter field="TEXT" name="LABEL" value="Route Output"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRouteOutput_1">
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>

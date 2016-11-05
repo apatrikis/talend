@@ -112,7 +112,7 @@
     <routinesParameter id="_8rtEUKN8EeaTP9NNc_eyRQ" name="TalendDate"/>
     <routinesParameter id="_8ryj4KN8EeaTP9NNc_eyRQ" name="TalendString"/>
   </parameters>
-  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="160">
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_1" show="false"/>
     <elementParameter field="TEXT" name="MESSAGE" value="&quot;Hello world to: &quot; + context.name"/>
     <elementParameter field="TEXT" name="CODE" value="42"/>

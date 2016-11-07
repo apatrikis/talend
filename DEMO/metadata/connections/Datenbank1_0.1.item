@@ -18,7 +18,7 @@
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_j_QoUKTzEeavKKVS5Qsp4A" name="information_schema"/>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_j_QoUaTzEeavKKVS5Qsp4A" name="pg_catalog"/>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_j_QoUqTzEeavKKVS5Qsp4A" name="public">
-      <ownedElement xsi:type="relational:TdTable" xmi:id="_CVXrIKT0EeavKKVS5Qsp4A" name="users" id="_CVWdAKT0EeavKKVS5Qsp4A" label="users" tableType="TABLE">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_CVXrIKT0EeavKKVS5Qsp4A" name="users" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_CVWdAKT0EeavKKVS5Qsp4A" label="users" tableType="TABLE">
         <taggedValue xmi:id="_CVXrIaT0EeavKKVS5Qsp4A" tag="Comment" value=""/>
         <feature xsi:type="relational:TdColumn" xmi:id="_CVXrIqT0EeavKKVS5Qsp4A" name="id" label="id" length="10" sourceType="INT4" talendType="id_Integer" key="true" nullable="false">
           <taggedValue xmi:id="_CVXrI6T0EeavKKVS5Qsp4A" tag="Comment" value=""/>

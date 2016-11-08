@@ -16,7 +16,7 @@
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_sNQOIKWbEeanufZEjQY9-g" name="postgres" dataManager="_sLIuQKWbEeanufZEjQY9-g">
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_sNQOI6WbEeanufZEjQY9-g" name="public">
-      <ownedElement xsi:type="relational:TdTable" xmi:id="_xQbNEKWbEeanufZEjQY9-g" name="customer" id="_xQamAKWbEeanufZEjQY9-g" label="customer" tableType="TABLE">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_xQbNEKWbEeanufZEjQY9-g" name="customer" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_xQamAKWbEeanufZEjQY9-g" label="customer" tableType="TABLE">
         <taggedValue xmi:id="_xQbNEaWbEeanufZEjQY9-g" tag="Comment" value=""/>
         <feature xsi:type="relational:TdColumn" xmi:id="_xQbNEqWbEeanufZEjQY9-g" name="ID" label="ID" length="-1" sourceType="INT4" talendType="id_Integer" key="true">
           <taggedValue xmi:id="_xQbNE6WbEeanufZEjQY9-g" tag="Comment" value=""/>

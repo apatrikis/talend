@@ -16,7 +16,7 @@
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_l_IVcKWPEeanufZEjQY9-g" name="talend" dataManager="_l8HdsKWPEeanufZEjQY9-g">
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_l_IVc6WPEeanufZEjQY9-g" name="public">
-      <ownedElement xsi:type="relational:TdTable" xmi:id="_rsW-AKWPEeanufZEjQY9-g" name="users" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_rsKwwKWPEeanufZEjQY9-g" label="users" tableType="TABLE">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_rsW-AKWPEeanufZEjQY9-g" name="users" id="_rsKwwKWPEeanufZEjQY9-g" label="users" tableType="TABLE">
         <taggedValue xmi:id="_rsW-AaWPEeanufZEjQY9-g" tag="Comment" value=""/>
         <feature xsi:type="relational:TdColumn" xmi:id="_rsW-AqWPEeanufZEjQY9-g" name="id" label="id" length="10" sourceType="INT4" talendType="id_Integer" key="true" nullable="false">
           <taggedValue xmi:id="_rsW-A6WPEeanufZEjQY9-g" tag="Comment" value=""/>

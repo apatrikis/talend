@@ -315,7 +315,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
-        <mapperTableEntries name="id" expression="" type="id_Integer"/>
+        <mapperTableEntries name="id" expression="row1.id" type="id_Integer"/>
         <mapperTableEntries name="name" expression="row1.firstname " type="id_String"/>
         <mapperTableEntries name="login" expression="row1.login " type="id_String"/>
         <mapperTableEntries name="passwort" expression="row1.password " type="id_Object" nullable="true"/>

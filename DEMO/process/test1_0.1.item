@@ -403,7 +403,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out3">
-        <mapperTableEntries name="ID" expression="row2.ID  row2.ID " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="ID" expression=" row2.ID " type="id_Integer" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="ID" type="id_Integer" nullable="true"/>

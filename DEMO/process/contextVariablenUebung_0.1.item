@@ -115,7 +115,7 @@
     <elementParameter field="TEXT" name="NB_ROWS" value="100" show="false"/>
     <elementParameter field="TABLE" name="VALUES" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="company"/>
-      <elementValue elementRef="ARRAY" value="Client "/>
+      <elementValue elementRef="ARRAY" value="&quot;Client&quot; "/>
       <elementValue elementRef="SCHEMA_COLUMN" value="randomnumber"/>
       <elementValue elementRef="ARRAY" value="Numeric.random(0 ,100 )"/>
     </elementParameter>

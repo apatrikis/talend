@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" name="Default"/>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="company" prompt="company?" promptNeeded="false" repositoryContextId="_5F31kKZ7Eea2l8owiPlw5A" type="id_String" value="context.company"/>
+    <contextParameter comment="" name="directory" prompt="directory?" promptNeeded="false" repositoryContextId="_5F31kKZ7Eea2l8owiPlw5A" type="id_Directory" value="e"/>
+    <contextParameter comment="" name="nbrows" prompt="nbrows?" promptNeeded="false" repositoryContextId="_5F31kKZ7Eea2l8owiPlw5A" type="id_Integer" value="context.nbrows"/>
+  </context>
+  <context confirmationNeeded="false" name="contextClient1">
+    <contextParameter comment="" name="company" prompt="company?" promptNeeded="false" repositoryContextId="_5F31kKZ7Eea2l8owiPlw5A" type="id_String" value="context.company"/>
+    <contextParameter comment="" name="directory" prompt="directory?" promptNeeded="false" repositoryContextId="_5F31kKZ7Eea2l8owiPlw5A" type="id_Directory" value="e"/>
+    <contextParameter comment="" name="nbrows" prompt="nbrows?" promptNeeded="false" repositoryContextId="_5F31kKZ7Eea2l8owiPlw5A" type="id_Integer" value="context.nbrows"/>
+  </context>
+  <context confirmationNeeded="false" name="contextClient2">
+    <contextParameter comment="" name="company" prompt="company?" promptNeeded="false" repositoryContextId="_5F31kKZ7Eea2l8owiPlw5A" type="id_String" value="context.company"/>
+    <contextParameter comment="" name="directory" prompt="directory?" promptNeeded="false" repositoryContextId="_5F31kKZ7Eea2l8owiPlw5A" type="id_Directory" value="e"/>
+    <contextParameter comment="" name="nbrows" prompt="nbrows?" promptNeeded="false" repositoryContextId="_5F31kKZ7Eea2l8owiPlw5A" type="id_Integer" value="context.nbrows"/>
+  </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
@@ -112,10 +126,10 @@
   </parameters>
   <node componentName="tRowGenerator" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRowGenerator_1" show="false"/>
-    <elementParameter field="TEXT" name="NB_ROWS" value="100" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="context.nbrows" show="false"/>
     <elementParameter field="TABLE" name="VALUES" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="company"/>
-      <elementValue elementRef="ARRAY" value="&quot;Client&quot; "/>
+      <elementValue elementRef="ARRAY" value="context.company "/>
       <elementValue elementRef="SCHEMA_COLUMN" value="randomnumber"/>
       <elementValue elementRef="ARRAY" value="Numeric.random(0 ,100 )"/>
     </elementParameter>
@@ -130,7 +144,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/batas/Desktop/NKD Talend/ubung/ContextVariableuebung/client1.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/batas/Desktop/NKD Talend/ubung/ContextVariableuebung/&quot;+context.directory + context.company+&quot;.csv&quot;"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>

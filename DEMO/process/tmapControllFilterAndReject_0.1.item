@@ -271,7 +271,7 @@
         <mapperTableEntries name="Sum1" type="id_Float"/>
         <mapperTableEntries name="Sum2" type="id_Float"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="state" expressionFilter="state.LabelState !=null &amp;&amp; !state.LabelState.isEmpty()" activateExpressionFilter="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="state" expressionFilter="state.LabelState !=null &amp;&amp; !state.LabelState.isEmpty()" activateExpressionFilter="true" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="idState" expression="customer.idState " type="id_Integer" operator="="/>
         <mapperTableEntries name="LabelState" type="id_String" nullable="true"/>
       </inputTables>

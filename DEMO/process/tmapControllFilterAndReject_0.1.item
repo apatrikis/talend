@@ -238,7 +238,7 @@
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="name" expression="customer.CustomerName.toUpperCase()" type="id_String"/>
       </varTables>
-      <outputTables sizeState="INTERMEDIATE" name="output" expressionFilter="&quot;Ohio&quot;.isEqual(state.LabelState)" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="output" expressionFilter="&quot;Ohio&quot;.equals(state.LabelState)" activateExpressionFilter="true">
         <mapperTableEntries name="id" expression="customer.id  " type="id_Integer"/>
         <mapperTableEntries name="sumID" expression="customer.id2 + customer.id  " type="id_Integer"/>
         <mapperTableEntries name="CustomerName" expression="Var.name  " type="id_String"/>

@@ -217,7 +217,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_bm81EKZdEea2l8owiPlw5A-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_YahbsKZlEea2l8owiPlw5A-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
@@ -238,7 +238,7 @@
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="name" expression="customer.CustomerName.toUpperCase()" type="id_String"/>
       </varTables>
-      <outputTables sizeState="INTERMEDIATE" name="output">
+      <outputTables sizeState="INTERMEDIATE" name="output" expressionFilter="&quot;Ohio&quot;.isEqual(state.LabelState)" activateExpressionFilter="true">
         <mapperTableEntries name="id" expression="customer.id  " type="id_Integer"/>
         <mapperTableEntries name="sumID" expression="customer.id2 + customer.id  " type="id_Integer"/>
         <mapperTableEntries name="CustomerName" expression="Var.name  " type="id_String"/>
@@ -248,7 +248,7 @@
         <mapperTableEntries name="RegisterTime" expression="customer.RegisterTime  " type="id_String"/>
         <mapperTableEntries name="flag" expression="(customer.id2 &lt;45) ? &quot;inferior&quot; : &quot;superior&quot; " type="id_String" nullable="true"/>
       </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="customer" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="customer" expressionFilter="!customer.CustomerAddress.equals(&quot;unknown&quot;)" activateExpressionFilter="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="id" type="id_Integer"/>
         <mapperTableEntries name="CustomerName" type="id_String"/>
         <mapperTableEntries name="CustomerAddress" type="id_String"/>
@@ -259,7 +259,7 @@
         <mapperTableEntries name="Sum1" type="id_Float"/>
         <mapperTableEntries name="Sum2" type="id_Float"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="state" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="state" expressionFilter="state.LabelState !=null &amp;&amp; !state.LabelState.isEmpty()" activateExpressionFilter="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="idState" expression="customer.idState " type="id_Integer" operator="="/>
         <mapperTableEntries name="LabelState" type="id_String" nullable="true"/>
       </inputTables>
@@ -414,10 +414,10 @@
   </node>
   <node componentName="tFileCopy" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileCopy_1" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/batas/Desktop/NKD Talend/ubung/mappinWithVariables/CustomerStateVar.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/batas/Desktop/NKD Talend/ubung/MappingWithFilterAndReject/CustomerStateVar.csv&quot;"/>
     <elementParameter field="CHECK" name="ENABLE_COPY_DIRECTORY" value="false"/>
     <elementParameter field="DIRECTORY" name="SOURCE_DERECTORY" value="&quot;C:/app/TalendStudio/workspace&quot;" show="false"/>
-    <elementParameter field="DIRECTORY" name="DESTINATION" value="&quot;C:/Users/batas/Desktop/NKD Talend/ubung/mappinWithVariables&quot;"/>
+    <elementParameter field="DIRECTORY" name="DESTINATION" value="&quot;C:/Users/batas/Desktop/NKD Talend/ubung/MappingWithFilterAndReject&quot;"/>
     <elementParameter field="CHECK" name="RENAME" value="true"/>
     <elementParameter field="TEXT" name="DESTINATION_RENAME" value="&quot;CustomerStateVar.csv&quot;"/>
     <elementParameter field="CHECK" name="REMOVE_FILE" value="true"/>

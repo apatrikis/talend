@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_5GMlsKZ7Eea2l8owiPlw5A" confirmationNeeded="false" name="contextClient1">
+    <contextParameter xmi:id="_5GMlsaZ7Eea2l8owiPlw5A" comment="" name="company" prompt="company?" promptNeeded="false" type="id_String" value="context.company"/>
+    <contextParameter xmi:id="_5GMlsqZ7Eea2l8owiPlw5A" comment="" name="directory" prompt="directory?" promptNeeded="false" type="id_Directory" value="e"/>
+    <contextParameter xmi:id="_5GMls6Z7Eea2l8owiPlw5A" comment="" name="nbrows" prompt="nbrows?" promptNeeded="false" type="id_Integer" value="context.nbrows"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5GMltKZ7Eea2l8owiPlw5A" confirmationNeeded="false" name="contextClient2">
+    <contextParameter xmi:id="_5GMltaZ7Eea2l8owiPlw5A" comment="" name="company" prompt="company?" promptNeeded="false" type="id_String" value="context.company"/>
+    <contextParameter xmi:id="_5GMltqZ7Eea2l8owiPlw5A" comment="" name="directory" prompt="directory?" promptNeeded="false" type="id_Directory" value="e"/>
+    <contextParameter xmi:id="_5GMlt6Z7Eea2l8owiPlw5A" comment="" name="nbrows" prompt="nbrows?" promptNeeded="false" type="id_Integer" value="context.nbrows"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_5GMluKZ7Eea2l8owiPlw5A" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_5GMluaZ7Eea2l8owiPlw5A" comment="" name="company" prompt="company?" promptNeeded="false" type="id_String" value="context.company"/>
+    <contextParameter xmi:id="_5GMluqZ7Eea2l8owiPlw5A" comment="" name="directory" prompt="directory?" promptNeeded="false" type="id_Directory" value="e"/>
+    <contextParameter xmi:id="_5GMlu6Z7Eea2l8owiPlw5A" comment="" name="nbrows" prompt="nbrows?" promptNeeded="false" type="id_Integer" value="context.nbrows"/>
+  </talendfile:ContextType>
+</xmi:XMI>

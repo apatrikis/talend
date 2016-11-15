@@ -433,6 +433,7 @@
       <relatedItems xmi:id="_VszfzqscEeaYT93ZZIoWgg" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Vszfz6scEeaYT93ZZIoWgg" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Vszf0KscEeaYT93ZZIoWgg" id="MDM" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_D7aFQKsdEeaYT93ZZIoWgg" id="DataMasking" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_Vs0G0KscEeaYT93ZZIoWgg">
       <baseItem xmi:id="_Vs0G0ascEeaYT93ZZIoWgg" id="_yH_5kKsSEeatotgV0_lrnA" version="0.1" type="job"/>

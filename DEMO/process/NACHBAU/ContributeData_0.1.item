@@ -114,9 +114,7 @@
   </parameters>
   <node componentName="tFileInputXML" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputXML_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_2o200KtCEeaYT93ZZIoWgg" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/batas/Desktop/NKD Talend/ProjektNachbau/out/KonValXML.xml&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/opt/talend/esb/6.2.1/container/TalendJobServersFiles/repository/DEMO_Datenkonsolidieren_20161108_141032_EuDSc/Datenkonsolidieren/C:/Users/batas/Desktop/NKD Talend/ProjektNachbau/out/KonValXML.xml&quot;"/>
     <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/root/row&quot;"/>
     <elementParameter field="TABLE" name="MAPPING">
       <elementValue elementRef="SCHEMA_COLUMN" value="id"/>

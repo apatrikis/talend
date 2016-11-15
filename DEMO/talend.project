@@ -658,6 +658,12 @@
       <relatedItems xmi:id="_Vs18GKscEeaYT93ZZIoWgg" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Vs18GascEeaYT93ZZIoWgg" id="Mathematical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Vs18GqscEeaYT93ZZIoWgg" id="_K9Sz4Kp-EeatotgV0_lrnA - products" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_DPMfgKsdEeaYT93ZZIoWgg" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_DPMfgasdEeaYT93ZZIoWgg" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_DPMfgqsdEeaYT93ZZIoWgg" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_DPMfg6sdEeaYT93ZZIoWgg" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_DPMfhKsdEeaYT93ZZIoWgg" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_DPMfhasdEeaYT93ZZIoWgg" id="MDM" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_Vs18G6scEeaYT93ZZIoWgg">
       <baseItem xmi:id="_Vs18HKscEeaYT93ZZIoWgg" id="_-MydMKgJEeatotgV0_lrnA" version="0.1" type="job"/>

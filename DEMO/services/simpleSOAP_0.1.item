@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services">
+  <Services:ServiceConnection xmi:id="_mYdrYGNfEeWAT6tVhB0Nwg" servicePort="_mbXOYGNfEeWAT6tVhB0Nwg">
+    <additionalInfo xmi:id="_jfo1YGNlEeWAT6tVhB0Nwg" key="groupId" value="org.trainingDEV"/>
+    <additionalInfo xmi:id="_jfo1YWNlEeWAT6tVhB0Nwg" key="artifactId" value="simpleSOAP"/>
+    <additionalInfo xmi:id="_jfo1YmNlEeWAT6tVhB0Nwg" key="version" value="0.1.1"/>
+    <additionalInfo xmi:id="_VOn48GOIEeWAT6tVhB0Nwg" key="UseSAM" value="false"/>
+    <additionalInfo xmi:id="_VOn48WOIEeWAT6tVhB0Nwg" key="UseSL" value="false"/>
+    <additionalInfo xmi:id="_VOn48mOIEeWAT6tVhB0Nwg" key="Security.Basic" value="false"/>
+    <additionalInfo xmi:id="_VOn482OIEeWAT6tVhB0Nwg" key="Security.SAML" value="false"/>
+    <additionalInfo xmi:id="_VOn49GOIEeWAT6tVhB0Nwg" key="Authorization" value="false"/>
+    <additionalInfo xmi:id="_VOogAGOIEeWAT6tVhB0Nwg" key="Encryption" value="false"/>
+    <additionalInfo xmi:id="_VOogAWOIEeWAT6tVhB0Nwg" key="UseServiceRegisrty" value="false"/>
+    <additionalInfo xmi:id="_VOogAmOIEeWAT6tVhB0Nwg" key="LogMessages" value="false"/>
+    <additionalInfo xmi:id="_VOogA2OIEeWAT6tVhB0Nwg" key="WsdlSchemaValidation" value="false"/>
+    <additionalInfo xmi:id="_VOogBGOIEeWAT6tVhB0Nwg" key="useBusinessCorrelation" value="false"/>
+  </Services:ServiceConnection>
+  <Services:ServicePort xmi:id="_mbXOYGNfEeWAT6tVhB0Nwg" name="simpleSOAPPortType" id="_mbSV4GNfEeWAT6tVhB0Nwg" serviceOperation="_mbXOYWNfEeWAT6tVhB0Nwg"/>
+  <Services:ServiceOperation xmi:id="_mbXOYWNfEeWAT6tVhB0Nwg" label="simpleSOAPOperation-simpleSOAPPortType_simpleSOAPOperation" name="simpleSOAPOperation" id="_mbS88GNfEeWAT6tVhB0Nwg" referenceJobId="_CiIEwGNgEeWAT6tVhB0Nwg"/>
+</xmi:XMI>

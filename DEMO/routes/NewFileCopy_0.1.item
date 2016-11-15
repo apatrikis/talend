@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_VgHuoKscEeaYT93ZZIoWgg" defaultContext="Default">
+  <context xmi:id="_VgHuoascEeaYT93ZZIoWgg" confirmationNeeded="false" name="Default"/>
+  <parameters xmi:id="_VgHuoqscEeaYT93ZZIoWgg">
+    <elementParameter xmi:id="_VgHuo6scEeaYT93ZZIoWgg" field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter xmi:id="_VgHupKscEeaYT93ZZIoWgg" field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter xmi:id="_VgHupascEeaYT93ZZIoWgg" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_VgHupqscEeaYT93ZZIoWgg" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_VgHup6scEeaYT93ZZIoWgg" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_VgHuqKscEeaYT93ZZIoWgg" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_VgHuqascEeaYT93ZZIoWgg" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_VgHuqqscEeaYT93ZZIoWgg" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_VgHuq6scEeaYT93ZZIoWgg" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_VgHurKscEeaYT93ZZIoWgg" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_VgHurascEeaYT93ZZIoWgg" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_VgHurqscEeaYT93ZZIoWgg" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_VgHur6scEeaYT93ZZIoWgg" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_VgHusKscEeaYT93ZZIoWgg" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_VgHusascEeaYT93ZZIoWgg" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_VgHusqscEeaYT93ZZIoWgg" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_VgHus6scEeaYT93ZZIoWgg" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <routinesParameter xmi:id="_VgHutKscEeaYT93ZZIoWgg" id="_MzgHsHyrEeWUEP0xadIpjQ" name="DataOperation"/>
+    <routinesParameter xmi:id="_VgHutascEeaYT93ZZIoWgg" id="_M3l9gHyrEeWUEP0xadIpjQ" name="Mathematical"/>
+    <routinesParameter xmi:id="_VgHutqscEeaYT93ZZIoWgg" id="_M4_rsHyrEeWUEP0xadIpjQ" name="Numeric"/>
+    <routinesParameter xmi:id="_VgHut6scEeaYT93ZZIoWgg" id="_M6JiQHyrEeWUEP0xadIpjQ" name="Relational"/>
+    <routinesParameter xmi:id="_VgHuuKscEeaYT93ZZIoWgg" id="_NACH0HyrEeWUEP0xadIpjQ" name="SQLike"/>
+    <routinesParameter xmi:id="_VgHuuascEeaYT93ZZIoWgg" id="_M7ZfcHyrEeWUEP0xadIpjQ" name="StringHandling"/>
+    <routinesParameter xmi:id="_VgHuuqscEeaYT93ZZIoWgg" id="_M8o1kHyrEeWUEP0xadIpjQ" name="TalendDataGenerator"/>
+    <routinesParameter xmi:id="_VgHuu6scEeaYT93ZZIoWgg" id="_M9z6QHyrEeWUEP0xadIpjQ" name="TalendDate"/>
+    <routinesParameter xmi:id="_VgHuvKscEeaYT93ZZIoWgg" id="_M-5fYHyrEeWUEP0xadIpjQ" name="TalendString"/>
+  </parameters>
+  <node xmi:id="_VgHuvascEeaYT93ZZIoWgg" componentName="cMessagingEndpoint" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="96">
+    <elementParameter xmi:id="_VgHuvqscEeaYT93ZZIoWgg" field="TEXT" name="UNIQUE_NAME" value="cMessagingEndpoint_1" show="false"/>
+    <elementParameter xmi:id="_VgHuv6scEeaYT93ZZIoWgg" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\6.0.1\studio\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_VgHuwKscEeaYT93ZZIoWgg" field="TEXT" name="URI" value="&quot;file://C:/StudentFiles/ESBBasics/Routes/MessagingEndpoints?fileName=customer3.txt&quot;"/>
+    <elementParameter xmi:id="_VgHuwascEeaYT93ZZIoWgg" field="TABLE" name="HOTLIBS"/>
+    <elementParameter xmi:id="_VgHuwqscEeaYT93ZZIoWgg" field="CHECK" name="USE_CUSTOM_COMPONENT" value="false"/>
+    <elementParameter xmi:id="_VgHuw6scEeaYT93ZZIoWgg" field="MODULE_LIST" name="LIBRARY" value="" show="false"/>
+    <elementParameter xmi:id="_VgHuxKscEeaYT93ZZIoWgg" field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>OriginalFile"/>
+    <elementParameter xmi:id="_VgHuxascEeaYT93ZZIoWgg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_VgHuxqscEeaYT93ZZIoWgg" componentName="cMessagingEndpoint" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="96">
+    <elementParameter xmi:id="_VgHux6scEeaYT93ZZIoWgg" field="TEXT" name="UNIQUE_NAME" value="cMessagingEndpoint_2" show="false"/>
+    <elementParameter xmi:id="_VgHuyKscEeaYT93ZZIoWgg" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\6.0.1\studio\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_VgHuyascEeaYT93ZZIoWgg" field="TEXT" name="URI" value="&quot;file://C:/StudentFiles/ESBBasics/Routes/MessagingEndpoints/Out&quot;"/>
+    <elementParameter xmi:id="_VgHuyqscEeaYT93ZZIoWgg" field="TABLE" name="HOTLIBS"/>
+    <elementParameter xmi:id="_VgHuy6scEeaYT93ZZIoWgg" field="CHECK" name="USE_CUSTOM_COMPONENT" value="false"/>
+    <elementParameter xmi:id="_VgHuzKscEeaYT93ZZIoWgg" field="MODULE_LIST" name="LIBRARY" value="" show="false"/>
+    <elementParameter xmi:id="_VgHuzascEeaYT93ZZIoWgg" field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>CopyFile"/>
+    <elementParameter xmi:id="_VgHuzqscEeaYT93ZZIoWgg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <connection xmi:id="_VgHuz6scEeaYT93ZZIoWgg" connectorName="ROUTE" label="route1" lineStyle="14" metaname="cMessagingEndpoint_1" offsetLabelX="0" offsetLabelY="0" source="cMessagingEndpoint_1" target="cMessagingEndpoint_2">
+    <elementParameter xmi:id="_VgHu0KscEeaYT93ZZIoWgg" field="TEXT" name="UNIQUE_NAME" value="route1" show="false"/>
+  </connection>
+  <subjob xmi:id="_VgHu0ascEeaYT93ZZIoWgg">
+    <elementParameter xmi:id="_VgHu0qscEeaYT93ZZIoWgg" field="TEXT" name="UNIQUE_NAME" value="cMessagingEndpoint_1" show="false"/>
+    <elementParameter xmi:id="_VgHu06scEeaYT93ZZIoWgg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_VgHu1KscEeaYT93ZZIoWgg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_VgHu1ascEeaYT93ZZIoWgg">
+    <elementParameter xmi:id="_VgHu1qscEeaYT93ZZIoWgg" field="TEXT" name="UNIQUE_NAME" value="cMessagingEndpoint_2" show="false"/>
+    <elementParameter xmi:id="_VgHu16scEeaYT93ZZIoWgg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_VgHu2KscEeaYT93ZZIoWgg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

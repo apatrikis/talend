@@ -10,7 +10,7 @@
     </schema>
   </TalendMetadata:XmlFileConnection>
   <orgomg.cwm.resource.record:RecordFile xmi:id="_nwiH9as9EeaYT93ZZIoWgg" name="default" dataManager="_nwhg4Ks9EeaYT93ZZIoWgg">
-    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_nwiH9qs9EeaYT93ZZIoWgg" id="_Srj5UKs9EeaYT93ZZIoWgg" label="konVarMeta">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_nwiH9qs9EeaYT93ZZIoWgg" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_Srj5UKs9EeaYT93ZZIoWgg" label="konVarMeta">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nwiH96s9EeaYT93ZZIoWgg" label="id" length="-1" talendType="id_Integer" key="true" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nwiH-Ks9EeaYT93ZZIoWgg" label="firstname" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nwiH-as9EeaYT93ZZIoWgg" label="lastname" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>

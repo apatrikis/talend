@@ -130,7 +130,7 @@
     <elementParameter field="TEXT" name="NB_ROWS" value="1" show="false"/>
     <elementParameter field="TABLE" name="VALUES" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="newColumn"/>
-      <elementValue elementRef="ARRAY" value="1001 "/>
+      <elementValue elementRef="ARRAY" value="300000 "/>
       <elementValue elementRef="SCHEMA_COLUMN" value="newColumn1"/>
       <elementValue elementRef="ARRAY" value=" &quot;TESTITJEAH&quot; "/>
     </elementParameter>

@@ -481,7 +481,6 @@
       <column comment="" key="false" length="2147483647" name="newColumn3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" label="delete" name="delete">
-      <column comment="" key="true" length="10" name="newColumn" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="true" length="10" name="newColumn_1" nullable="false" originalDbColumnName="newColumn" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="2147483647" name="newColumn1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2147483647" name="newColumn2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -503,7 +502,6 @@
         <mapperTableEntries name="newColumn3" expression="row1.newColumn3 " type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="delete" expressionFilter="row1.TALEND_CDC_TYPE.equals(&quot;D&quot;)" activateExpressionFilter="true">
-        <mapperTableEntries name="newColumn" expression="" type="id_Integer"/>
         <mapperTableEntries name="newColumn_1" expression="row1.newColumn " type="id_Integer"/>
         <mapperTableEntries name="newColumn1" expression="row1.newColumn1 " type="id_String" nullable="true"/>
         <mapperTableEntries name="newColumn2" expression="row1.newColumn2 " type="id_String" nullable="true"/>
@@ -678,7 +676,6 @@
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="delete" name="tFileOutputDelimited_3">
-      <column comment="" key="true" length="10" name="newColumn" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="true" length="10" name="newColumn_1" nullable="false" originalDbColumnName="newColumn" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="2147483647" name="newColumn1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2147483647" name="newColumn2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>

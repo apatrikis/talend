@@ -396,67 +396,67 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="insert">
-        <mapperTableEntries name="newColumn" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn4" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn5" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn6" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn7" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn8" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn9" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn10" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn11" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn12" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn13" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn14" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn15" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn16" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn17" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn18" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn19" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn20" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn21" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn22" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn23" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn24" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn25" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn26" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn27" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn28" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn29" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn30" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn31" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn32" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn33" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn34" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn35" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn36" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn37" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn38" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn39" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn40" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn41" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn42" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn43" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn44" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn45" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn46" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn47" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn48" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn49" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn50" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn51" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn52" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn53" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn54" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn55" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn56" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn57" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn58" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn59" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn60" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn" expression="row1.newColumn" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn1" expression="row1.newColumn1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn2" expression="row1.newColumn2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn3" expression="row1.newColumn3" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn4" expression="row1.newColumn4" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn5" expression="row1.newColumn5" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn6" expression="row1.newColumn6" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn7" expression="row1.newColumn7" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn8" expression="row1.newColumn8" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn9" expression="row1.newColumn9" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn10" expression="row1.newColumn10" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn11" expression="row1.newColumn11" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn12" expression="row1.newColumn12" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn13" expression="row1.newColumn13" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn14" expression="row1.newColumn14" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn15" expression="row1.newColumn15" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn16" expression="row1.newColumn16" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn17" expression="row1.newColumn17" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn18" expression="row1.newColumn18" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn19" expression="row1.newColumn19" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn20" expression="row1.newColumn20" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn21" expression="row1.newColumn21" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn22" expression="row1.newColumn22" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn23" expression="row1.newColumn23" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn24" expression="row1.newColumn24" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn25" expression="row1.newColumn25" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn26" expression="row1.newColumn26" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn27" expression="row1.newColumn27" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn28" expression="row1.newColumn28" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn29" expression="row1.newColumn29" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn30" expression="row1.newColumn30" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn31" expression="row1.newColumn31" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn32" expression="row1.newColumn32" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn33" expression="row1.newColumn33" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn34" expression="row1.newColumn34" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn35" expression="row1.newColumn35" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn36" expression="row1.newColumn36" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn37" expression="row1.newColumn37" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn38" expression="row1.newColumn38" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn39" expression="row1.newColumn39" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn40" expression="row1.newColumn40" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn41" expression="row1.newColumn41" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn42" expression="row1.newColumn42" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn43" expression="row1.newColumn43" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn44" expression="row1.newColumn44" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn45" expression="row1.newColumn45" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn46" expression="row1.newColumn46" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn47" expression="row1.newColumn47" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn48" expression="row1.newColumn48" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn49" expression="row1.newColumn49" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn50" expression="row1.newColumn50" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn51" expression="row1.newColumn51" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn52" expression="row1.newColumn52" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn53" expression="row1.newColumn53" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn54" expression="row1.newColumn54" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn55" expression="row1.newColumn55" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn56" expression="row1.newColumn56" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn57" expression="row1.newColumn57" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn58" expression="row1.newColumn58" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn59" expression="row1.newColumn59" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn60" expression="row1.newColumn60" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="newColumn" type="id_String" nullable="true"/>

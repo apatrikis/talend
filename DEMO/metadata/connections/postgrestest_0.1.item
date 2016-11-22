@@ -233,7 +233,7 @@
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_N7i9IbCyEeaMApZb8nSnTA" name="information_schema"/>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_N7i9IrCyEeaMApZb8nSnTA" name="pg_catalog"/>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_N7i9I7CyEeaMApZb8nSnTA" name="public">
-      <ownedElement xsi:type="relational:TdTable" xmi:id="_AGxksLC9EeaViYsflqx8BQ" name="NewTest" id="_AGsFILC9EeaViYsflqx8BQ" label="NewTest" tableType="TABLE" attachedCDC="true" activatedCDC="true">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_AGxksLC9EeaViYsflqx8BQ" name="NewTest" id="_AGsFILC9EeaViYsflqx8BQ" label="NewTest" tableType="TABLE" attachedCDC="true">
         <taggedValue xmi:id="_AGxksbC9EeaViYsflqx8BQ" tag="Comment" value=""/>
         <feature xsi:type="relational:TdColumn" xmi:id="_AGyLwLC9EeaViYsflqx8BQ" name="newColumn" label="newColumn" length="2147483647" sourceType="VARCHAR" talendType="id_String" key="true">
           <taggedValue xmi:id="_AGyLwbC9EeaViYsflqx8BQ" tag="Comment" value=""/>

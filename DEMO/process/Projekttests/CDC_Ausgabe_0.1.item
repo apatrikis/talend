@@ -490,19 +490,19 @@
     <nodeData xsi:type="MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="insert" expressionFilter="row1.TALEND_CDC_TYPE.equals('I')" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="insert" expressionFilter="row1.TALEND_CDC_TYPE.equals(&quot;I&quot;)" activateExpressionFilter="true">
         <mapperTableEntries name="newColumn" expression="row1.newColumn " type="id_Integer"/>
         <mapperTableEntries name="newColumn1" expression="row1.newColumn1 " type="id_String" nullable="true"/>
         <mapperTableEntries name="newColumn2" expression="row1.newColumn2 " type="id_String" nullable="true"/>
         <mapperTableEntries name="newColumn3" expression="row1.newColumn3 " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="update" expressionFilter="row1.TALEND_CDC_TYPE.equals('U')" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="update" expressionFilter="row1.TALEND_CDC_TYPE.equals(&quot;U&quot;)" activateExpressionFilter="true">
         <mapperTableEntries name="newColumn" expression="row1.newColumn " type="id_Integer"/>
         <mapperTableEntries name="newColumn1" expression="row1.newColumn1 " type="id_String" nullable="true"/>
         <mapperTableEntries name="newColumn2" expression="row1.newColumn2 " type="id_String" nullable="true"/>
         <mapperTableEntries name="newColumn3" expression="row1.newColumn3 " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="delete" expressionFilter="row1.TALEND_CDC_TYPE.equals('D')" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="delete" expressionFilter="row1.TALEND_CDC_TYPE.equals(&quot;D&quot;)" activateExpressionFilter="true">
         <mapperTableEntries name="newColumn" expression="" type="id_Integer"/>
         <mapperTableEntries name="newColumn_1" expression="row1.newColumn " type="id_Integer"/>
         <mapperTableEntries name="newColumn1" expression="row1.newColumn1 " type="id_String" nullable="true"/>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_N5fHoLCyEeaMApZb8nSnTA" name="postgrestest" id="__Fa2YLCxEeaMApZb8nSnTA" label="postgrestest" dataPackage="_N7i9ILCyEeaMApZb8nSnTA" ContextMode="true" ContextId="_NuWOoLCyEeaMApZb8nSnTA" contextName="Default" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://192.168.56.101:5432/postgres" dbVersionString="V9_X" Port="context.postgrestest_Port" Username="context.postgrestest_Login" Password="context.postgrestest_Password" ServerName="context.postgrestest_Server" DatasourceName="" FileFieldName="" SID="context.postgrestest_Database" SqlSynthax="SQL Syntax" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="context.postgrestest_Schema">
+    <taggedValue xmi:id="_N5fHobCyEeaMApZb8nSnTA" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_N5tKELCyEeaMApZb8nSnTA" tag="package filter" value=""/>
+    <taggedValue xmi:id="_N51F4LCyEeaMApZb8nSnTA" tag="Status" value=""/>
+    <taggedValue xmi:id="_N51F4bCyEeaMApZb8nSnTA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_N51F4rCyEeaMApZb8nSnTA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_N51F47CyEeaMApZb8nSnTA" tag="Description" value=""/>
+    <taggedValue xmi:id="_N51F5LCyEeaMApZb8nSnTA" tag="Author" value=""/>
+    <taggedValue xmi:id="_N51s8LCyEeaMApZb8nSnTA" tag="otherParameter"/>
+    <taggedValue xmi:id="_N6VcMLCyEeaMApZb8nSnTA" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_N6VcMbCyEeaMApZb8nSnTA" tag="DB ProductVersion" value="9.4.10"/>
+    <taggedValue xmi:id="_N6VcMrCyEeaMApZb8nSnTA" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_N5fHorCyEeaMApZb8nSnTA" key="CONN_PARA_KEY_USERNAME" value="context.postgrestest_Login"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_N7i9ILCyEeaMApZb8nSnTA" name="postgres" dataManager="_N5fHoLCyEeaMApZb8nSnTA">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_N7i9IbCyEeaMApZb8nSnTA" name="information_schema"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_N7i9IrCyEeaMApZb8nSnTA" name="pg_catalog"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_N7i9I7CyEeaMApZb8nSnTA" name="public"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

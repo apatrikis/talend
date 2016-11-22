@@ -230,8 +230,6 @@
     <parameters xmi:id="_N5fHorCyEeaMApZb8nSnTA" key="CONN_PARA_KEY_USERNAME" value="context.postgrestest_Login"/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_N7i9ILCyEeaMApZb8nSnTA" name="postgres" dataManager="_N5fHoLCyEeaMApZb8nSnTA">
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_N7i9IbCyEeaMApZb8nSnTA" name="information_schema"/>
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_N7i9IrCyEeaMApZb8nSnTA" name="pg_catalog"/>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_N7i9I7CyEeaMApZb8nSnTA" name="public">
       <ownedElement xsi:type="relational:TdTable" xmi:id="_AGxksLC9EeaViYsflqx8BQ" name="NewTest" id="_AGsFILC9EeaViYsflqx8BQ" label="NewTest" tableType="TABLE" attachedCDC="true" activatedCDC="true">
         <taggedValue xmi:id="_AGxksbC9EeaViYsflqx8BQ" tag="Comment" value=""/>
@@ -557,5 +555,7 @@
         </feature>
       </ownedElement>
     </ownedElement>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_lPifsLDAEeaViYsflqx8BQ" name="information_schema"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_lPifsbDAEeaViYsflqx8BQ" name="pg_catalog"/>
   </orgomg.cwm.resource.relational:Catalog>
 </xmi:XMI>

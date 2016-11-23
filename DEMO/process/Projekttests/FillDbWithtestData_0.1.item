@@ -1807,7 +1807,7 @@
       <outputTables sizeState="INTERMEDIATE" name="update3">
         <mapperTableEntries name="newColumn" expression="row3.newColumn" type="id_Integer"/>
         <mapperTableEntries name="newColumn1" expression="&quot;Jonny&quot;" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn11" expression="&quot;Mahony" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn11" expression="&quot;Mahony&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="newColumn12" expression="row3.newColumn12" type="id_String" nullable="true"/>
         <mapperTableEntries name="newColumn13" expression="row3.newColumn13" type="id_String" nullable="true"/>
         <mapperTableEntries name="newColumn14" expression="row3.newColumn14" type="id_String" nullable="true"/>

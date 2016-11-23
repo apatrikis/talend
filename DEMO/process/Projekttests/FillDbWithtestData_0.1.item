@@ -363,7 +363,7 @@
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="insert1">
         <mapperTableEntries name="newColumn" expression="row1.newColumn " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="newColumn1" expression="row1.newColumn1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn1" expression="row1.newColumn1 +&quot;s&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="newColumn11" expression="row1.newColumn11 " type="id_String" nullable="true"/>
         <mapperTableEntries name="newColumn12" expression="row1.newColumn12 " type="id_String" nullable="true"/>
         <mapperTableEntries name="newColumn13" expression="row1.newColumn13 " type="id_String" nullable="true"/>
@@ -485,7 +485,7 @@
     <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kue+YqsfU9QZ3Cs8tEka5a9qYiusfyWaMcQ="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Oldnsert&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
-    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT_OR_UPDATE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false" show="false"/>
     <elementParameter field="CHECK" name="SPATIAL_INDEX" value="false" show="false"/>
     <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" value="false" show="false"/>
@@ -759,8 +759,8 @@
     </elementParameter>
     <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
-    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true" show="false"/>
-    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000" show="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
     <elementParameter field="TEXT" name="LABEL" value="postgres2"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tPostgresqlOutput_1">
@@ -872,7 +872,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tPostgresqlCDC" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="416">
+  <node componentName="tPostgresqlCDC" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlCDC_1" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_-AvhwLC7EeaViYsflqx8BQ" show="false"/>
@@ -1167,7 +1167,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="416">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -1266,7 +1266,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="320">
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
@@ -1303,7 +1303,7 @@
       <column comment="" key="false" length="2147483647" name="newColumn13" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="448">
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_2" show="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
@@ -1354,12 +1354,14 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.postgres2_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.postgres2_Login"/>
     <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kue+YqsfU9QZ3Cs8tEka5a9qYiusfyWaMcQ="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_T5fyMLDGEeaViYsflqx8BQ - Oldnsert" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Oldnsert&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  \&quot;&quot;+context.postgres2_Database+&quot;\&quot;.\&quot;&quot;+context.postgres2_Schema+&quot;\&quot;.\&quot;Oldnsert\&quot;.\&quot;newColumn\&quot;, &#xA;  \&quot;&quot;+context.postgres2_Database+&quot;\&quot;.\&quot;&quot;+context.postgres2_Schema+&quot;\&quot;.\&quot;Oldnsert\&quot;.\&quot;newColumn1\&quot;&#xA;FROM \&quot;&quot;+context.postgres2_Database+&quot;\&quot;.\&quot;&quot;+context.postgres2_Schema+&quot;\&quot;.\&quot;Oldnsert\&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT * FROM Oldnsert WHERE id = '1'&quot;&#xA;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -1372,7 +1374,7 @@
     <elementParameter field="TABLE" name="TRIM_COLUMN">
       <elementValue elementRef="SCHEMA_COLUMN" value="newColumn"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Barico"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="newColumn1"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="newColumn11"/>
       <elementValue elementRef="TRIM" value="false"/>
@@ -1473,13 +1475,13 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="newColumn149"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="postgres2"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="Oldnsert" name="tPostgresqlInput_1">
       <column comment="" key="true" length="10" name="newColumn" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="Barico" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="newColumn1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="2147483647" name="newColumn11" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1632,7 +1634,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="224">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -1643,7 +1645,7 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="Oldnsert" name="update2">
+    <metadata connector="FLOW" label="Oldnsert" name="update3">
       <column comment="" key="true" length="10" name="newColumn" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -1802,62 +1804,62 @@
     <nodeData xsi:type="MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="update2">
-        <mapperTableEntries name="newColumn" expression="row3.newColumn " type="id_Integer"/>
-        <mapperTableEntries name="newColumn1" expression="row3.Barico " type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn11" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn12" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn13" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn14" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn15" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn16" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn17" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn18" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn19" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn110" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn111" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn112" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn113" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn114" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn115" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn116" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn117" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn118" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn119" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn120" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn121" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn122" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn123" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn124" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn125" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn126" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn127" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn128" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn129" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn130" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn131" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn132" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn133" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn134" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn135" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn136" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn137" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn138" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn139" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn140" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn141" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn142" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn143" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn144" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn145" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn146" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn147" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn148" type="id_String" nullable="true"/>
-        <mapperTableEntries name="newColumn149" type="id_String" nullable="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="update3">
+        <mapperTableEntries name="newColumn" expression="row3.newColumn" type="id_Integer"/>
+        <mapperTableEntries name="newColumn1" expression="&quot;Jonny&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn11" expression="&quot;Mahony" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn12" expression="row3.newColumn12" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn13" expression="row3.newColumn13" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn14" expression="row3.newColumn14" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn15" expression="row3.newColumn15" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn16" expression="row3.newColumn16" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn17" expression="row3.newColumn17" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn18" expression="row3.newColumn18" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn19" expression="row3.newColumn19" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn110" expression="row3.newColumn110" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn111" expression="row3.newColumn111" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn112" expression="row3.newColumn112" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn113" expression="row3.newColumn113" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn114" expression="row3.newColumn114" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn115" expression="row3.newColumn115" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn116" expression="row3.newColumn116" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn117" expression="row3.newColumn117" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn118" expression="row3.newColumn118" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn119" expression="row3.newColumn119" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn120" expression="row3.newColumn120" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn121" expression="row3.newColumn121" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn122" expression="row3.newColumn122" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn123" expression="row3.newColumn123" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn124" expression="row3.newColumn124" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn125" expression="row3.newColumn125" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn126" expression="row3.newColumn126" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn127" expression="row3.newColumn127" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn128" expression="row3.newColumn128" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn129" expression="row3.newColumn129" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn130" expression="row3.newColumn130" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn131" expression="row3.newColumn131" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn132" expression="row3.newColumn132" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn133" expression="row3.newColumn133" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn134" expression="row3.newColumn134" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn135" expression="row3.newColumn135" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn136" expression="row3.newColumn136" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn137" expression="row3.newColumn137" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn138" expression="row3.newColumn138" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn139" expression="row3.newColumn139" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn140" expression="row3.newColumn140" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn141" expression="row3.newColumn141" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn142" expression="row3.newColumn142" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn143" expression="row3.newColumn143" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn144" expression="row3.newColumn144" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn145" expression="row3.newColumn145" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn146" expression="row3.newColumn146" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn147" expression="row3.newColumn147" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn148" expression="row3.newColumn148" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn149" expression="row3.newColumn149" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="newColumn" type="id_Integer"/>
-        <mapperTableEntries name="Barico" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn1" type="id_String" nullable="true"/>
         <mapperTableEntries name="newColumn11" type="id_String" nullable="true"/>
         <mapperTableEntries name="newColumn12" type="id_String" nullable="true"/>
         <mapperTableEntries name="newColumn13" type="id_String" nullable="true"/>
@@ -2553,9 +2555,12 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="update2" lineStyle="0" metaname="update2" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tPostgresqlOutput_2">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tPostgresqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlInput_1" target="tPostgresqlCDC_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="update3" lineStyle="0" metaname="update3" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tPostgresqlOutput_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="update2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="update3" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRowGenerator_1" show="false"/>

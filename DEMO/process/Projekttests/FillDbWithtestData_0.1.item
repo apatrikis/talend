@@ -133,7 +133,7 @@
   </parameters>
   <node componentName="tRowGenerator" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRowGenerator_1" show="false"/>
-    <elementParameter field="TEXT" name="NB_ROWS" value="1" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="100" show="false"/>
     <elementParameter field="TABLE" name="VALUES" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="newColumn"/>
       <elementValue elementRef="ARRAY" value="Numeric.sequence(&quot;s1&quot; ,1 ,1 )"/>
@@ -363,7 +363,7 @@
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="insert1">
         <mapperTableEntries name="newColumn" expression="row1.newColumn " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="newColumn1" expression="&quot;Mahoni&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="newColumn1" expression="&quot;Jonny&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="newColumn11" expression="row1.newColumn11 " type="id_String" nullable="true"/>
         <mapperTableEntries name="newColumn12" expression="row1.newColumn12 " type="id_String" nullable="true"/>
         <mapperTableEntries name="newColumn13" expression="row1.newColumn13 " type="id_String" nullable="true"/>
@@ -1312,9 +1312,9 @@
     <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
     <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
-    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
     <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
-    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>

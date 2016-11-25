@@ -3,7 +3,7 @@
   <contextParameter xmi:id="_FxUbkbMAEear8cCzwoZShQ" comment="" name="postgres_Server" prompt="postgres_Server?" promptNeeded="false" type="id_String" value="192.168.56.101"/>
   <contextParameter xmi:id="_FxUbkrMAEear8cCzwoZShQ" comment="" name="postgres_Port" prompt="postgres_Port?" promptNeeded="false" type="id_String" value="5432"/>
   <contextParameter xmi:id="_FxUbk7MAEear8cCzwoZShQ" comment="" name="postgres_Schema" prompt="postgres_Schema?" promptNeeded="false" type="id_String" value="public"/>
-  <contextParameter xmi:id="_FxUblLMAEear8cCzwoZShQ" comment="" name="postgres_Login" prompt="postgres_Login?" promptNeeded="false" type="id_String" value="talend"/>
-  <contextParameter xmi:id="_FxUblbMAEear8cCzwoZShQ" comment="" name="postgres_Password" prompt="postgres_Password?" promptNeeded="false" type="id_Password" value="YdTnhbqBAdo="/>
+  <contextParameter xmi:id="_FxUblLMAEear8cCzwoZShQ" comment="" name="postgres_Login" prompt="postgres_Login?" promptNeeded="false" type="id_String" value="postgres"/>
+  <contextParameter xmi:id="_FxUblbMAEear8cCzwoZShQ" comment="" name="postgres_Password" prompt="postgres_Password?" promptNeeded="false" type="id_Password" value="n/bdtpNJNao="/>
   <contextParameter xmi:id="_FxUblrMAEear8cCzwoZShQ" comment="" name="postgres_Database" prompt="postgres_Database?" promptNeeded="false" type="id_String" value="postgres"/>
 </talendfile:ContextType>

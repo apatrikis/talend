@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_NusM4LCyEeaMApZb8nSnTA" confirmationNeeded="false" name="Default">
-  <contextParameter xmi:id="_Nusz8LCyEeaMApZb8nSnTA" comment="" name="postgrestest_Password" prompt="postgrestest_Password?" promptNeeded="false" type="id_Password" value="YdTnhbqBAdo="/>
-  <contextParameter xmi:id="_Nusz8bCyEeaMApZb8nSnTA" comment="" name="postgrestest_Database" prompt="postgrestest_Database?" promptNeeded="false" type="id_String" value="postgres"/>
-  <contextParameter xmi:id="_Nusz8rCyEeaMApZb8nSnTA" comment="" name="postgrestest_Schema" prompt="postgrestest_Schema?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_Nusz87CyEeaMApZb8nSnTA" comment="" name="postgrestest_Port" prompt="postgrestest_Port?" promptNeeded="false" type="id_String" value="5432"/>
-  <contextParameter xmi:id="_Nusz9LCyEeaMApZb8nSnTA" comment="" name="postgrestest_Server" prompt="postgrestest_Server?" promptNeeded="false" type="id_String" value="192.168.56.101"/>
-  <contextParameter xmi:id="_Nusz9bCyEeaMApZb8nSnTA" comment="" name="postgrestest_Login" prompt="postgrestest_Login?" promptNeeded="false" type="id_String" value="talend"/>
-</talendfile:ContextType>

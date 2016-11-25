@@ -810,6 +810,7 @@
       <relatedItems xmi:id="_WvWQwbMFEear8cCzwoZShQ" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_WvWQwrMFEear8cCzwoZShQ" id="_T5fyMLDGEeaViYsflqx8BQ - QUELLE_Kunde" version="Latest" type="schema"/>
       <relatedItems xmi:id="_WvWQw7MFEear8cCzwoZShQ" id="_T5fyMLDGEeaViYsflqx8BQ - QUELLE_Bestellungen" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_S0vm4LMGEear8cCzwoZShQ" id="_T5fyMLDGEeaViYsflqx8BQ - NKDBestellungen" version="Latest" type="schema"/>
     </ItemsRelations>
     <migrationTask xmi:id="_8fplUKN8EeaTP9NNc_eyRQ" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_8fplUaN8EeaTP9NNc_eyRQ" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>

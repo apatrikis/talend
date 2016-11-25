@@ -327,7 +327,7 @@
           <sqlDataType xmi:id="_yngYE7DGEeaViYsflqx8BQ" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
         </feature>
       </ownedElement>
-      <ownedElement xsi:type="relational:TdTable" xmi:id="_62kK4LFiEeaguLMpTvESQw" name="Oldnsert" id="_62WIcLFiEeaguLMpTvESQw" label="Oldnsert" tableType="TABLE">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_62kK4LFiEeaguLMpTvESQw" name="Oldnsert" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_62WIcLFiEeaguLMpTvESQw" label="Oldnsert" tableType="TABLE">
         <taggedValue xmi:id="_62kK4bFiEeaguLMpTvESQw" tag="Comment" value=""/>
         <feature xsi:type="relational:TdColumn" xmi:id="_62kK4rFiEeaguLMpTvESQw" name="newColumn" label="newColumn" length="10" sourceType="INT4" talendType="id_Integer" key="true" nullable="false">
           <taggedValue xmi:id="_62kK47FiEeaguLMpTvESQw" tag="Comment" value=""/>

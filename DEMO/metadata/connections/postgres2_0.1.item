@@ -392,7 +392,7 @@
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_a5GoorDGEeaViYsflqx8BQ" name="pg_catalog"/>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_a5Goo7DGEeaViYsflqx8BQ" name="pg_toast_temp_1"/>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_a5GopLDGEeaViYsflqx8BQ" name="public">
-      <ownedElement xsi:type="relational:TdTable" xmi:id="_ynfwkLDGEeaViYsflqx8BQ" name="NewInsert" id="_ynfJgLDGEeaViYsflqx8BQ" label="NewInsert" tableType="TABLE" attachedCDC="true" activatedCDC="true">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_ynfwkLDGEeaViYsflqx8BQ" name="NewInsert" id="_ynfJgLDGEeaViYsflqx8BQ" label="NewInsert" tableType="TABLE" attachedCDC="true">
         <taggedValue xmi:id="_ynfwkbDGEeaViYsflqx8BQ" tag="Comment" value=""/>
         <feature xsi:type="relational:TdColumn" xmi:id="_ynfwkrDGEeaViYsflqx8BQ" name="newColumn" label="newColumn" length="10" sourceType="INT4" talendType="id_Integer" key="true" nullable="false">
           <taggedValue xmi:id="_ynfwk7DGEeaViYsflqx8BQ" tag="Comment" value=""/>

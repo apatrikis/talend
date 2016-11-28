@@ -153,7 +153,7 @@
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="NrE2x5vAkVTo4I4wi1Afkw=="/>
     <elementParameter field="DBTABLE" name="DATATABLE" value="&quot;NKDBestellungen&quot;"/>
-    <elementParameter field="TEXT" name="SUSCRIBER" value="&quot;APP1&quot;"/>
+    <elementParameter field="TEXT" name="SUSCRIBER" value="&quot;Import_NKDBestellungen&quot;"/>
     <elementParameter field="LABEL" name="EVENTS_TYPE" value=""/>
     <elementParameter field="CHECK" name="EVENTS_TYPE_INSERT" value="true"/>
     <elementParameter field="CHECK" name="EVENTS_TYPE_UPDATE" value="true"/>
@@ -323,7 +323,7 @@
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="NrE2x5vAkVTo4I4wi1Afkw=="/>
     <elementParameter field="DBTABLE" name="DATATABLE" value="&quot;NKDKunden&quot;"/>
-    <elementParameter field="TEXT" name="SUSCRIBER" value="&quot;APP1&quot;"/>
+    <elementParameter field="TEXT" name="SUSCRIBER" value="&quot;Import_NKDKunden&quot;"/>
     <elementParameter field="LABEL" name="EVENTS_TYPE" value=""/>
     <elementParameter field="CHECK" name="EVENTS_TYPE_INSERT" value="true"/>
     <elementParameter field="CHECK" name="EVENTS_TYPE_UPDATE" value="true"/>

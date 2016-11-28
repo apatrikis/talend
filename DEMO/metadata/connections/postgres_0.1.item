@@ -153,7 +153,7 @@
         <sqlDataType xmi:id="_1AktMrL9Eear8cCzwoZShQ" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12"/>
       </feature>
     </ownedElement>
-    <ownedElement xsi:type="relational:TdTable" xmi:id="_0_hkQLL9Eear8cCzwoZShQ" name="NKDBestellungen" id="_0_eg8LL9Eear8cCzwoZShQ" label="NKDBestellungen" tableType="TABLE" attachedCDC="true">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_0_hkQLL9Eear8cCzwoZShQ" name="NKDBestellungen" id="_0_eg8LL9Eear8cCzwoZShQ" label="NKDBestellungen" tableType="TABLE" attachedCDC="true" activatedCDC="true">
       <taggedValue xmi:id="_0_hkQbL9Eear8cCzwoZShQ" tag="Comment" value=""/>
       <feature xsi:type="relational:TdColumn" xmi:id="_0_hkQrL9Eear8cCzwoZShQ" name="ID" comment="ID der Bestellung" label="ID" length="10" sourceType="INT4" talendType="id_Integer" key="true" nullable="false">
         <taggedValue xmi:id="_0_hkQ7L9Eear8cCzwoZShQ" tag="Comment" value="ID der Bestellung"/>

@@ -92,7 +92,7 @@
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_a5GooLDGEeaViYsflqx8BQ" name="postgres" dataManager="_a3Uf8LDGEeaViYsflqx8BQ">
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_a5GopLDGEeaViYsflqx8BQ" name="public">
-      <ownedElement xsi:type="relational:TdTable" xmi:id="_C8KKUbWHEeaz1KMgKUrQeQ" name="NKDBestellungen" id="_C8KKULWHEeaz1KMgKUrQeQ" label="NKDBestellungen" tableType="TABLE" attachedCDC="true" activatedCDC="true">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_C8KKUbWHEeaz1KMgKUrQeQ" name="NKDBestellungen" id="_C8KKULWHEeaz1KMgKUrQeQ" label="NKDBestellungen" tableType="TABLE" attachedCDC="true">
         <taggedValue xmi:id="_C8KKUrWHEeaz1KMgKUrQeQ" tag="Comment" value=""/>
         <feature xsi:type="relational:TdColumn" xmi:id="_C8KKU7WHEeaz1KMgKUrQeQ" name="ID" comment="ID der Bestellung" label="ID" length="10" sourceType="INT4" talendType="id_Integer" key="true" nullable="false">
           <taggedValue xmi:id="_C8KKVLWHEeaz1KMgKUrQeQ" tag="Comment" value="ID der Bestellung"/>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_uo59QLVqEeaz1KMgKUrQeQ" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_uo59QbVqEeaz1KMgKUrQeQ" comment="" name="NKD_Password" prompt="NKD_Password?" promptNeeded="false" type="id_Password" value="YdTnhbqBAdo="/>
+  <contextParameter xmi:id="_uo59QrVqEeaz1KMgKUrQeQ" comment="" name="NKD_Database" prompt="NKD_Database?" promptNeeded="false" type="id_String" value="nkd"/>
+  <contextParameter xmi:id="_uo59Q7VqEeaz1KMgKUrQeQ" comment="" name="NKD_Schema" prompt="NKD_Schema?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_uo59RLVqEeaz1KMgKUrQeQ" comment="" name="NKD_Port" prompt="NKD_Port?" promptNeeded="false" type="id_String" value="5432"/>
+  <contextParameter xmi:id="_uo59RbVqEeaz1KMgKUrQeQ" comment="" name="NKD_Login" prompt="NKD_Login?" promptNeeded="false" type="id_String" value="talend"/>
+  <contextParameter xmi:id="_uo59RrVqEeaz1KMgKUrQeQ" comment="" name="NKD_Server" prompt="NKD_Server?" promptNeeded="false" type="id_String" value="192.168.56.101"/>
+</talendfile:ContextType>

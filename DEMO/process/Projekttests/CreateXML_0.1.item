@@ -226,7 +226,7 @@
         <nodes name="Quelle" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.3" xpath="row1/Quelle" nullable="false"/>
         <nodes name="CreatedAt" type="id_Date" xpath="row1/CreatedAt"/>
         <nodes name="ChangedAt" type="id_Date" xpath="row1/ChangedAt"/>
-        <nodes name="TALEND_CDC_TYPE" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.5 //@node.2/@nodeData/@connections.6" xpath="row1/TALEND_CDC_TYPE"/>
+        <nodes name="TALEND_CDC_TYPE" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.5" xpath="row1/TALEND_CDC_TYPE"/>
         <nodes name="TALEND_CDC_CREATION_DATE" type="id_Date" xpath="row1/TALEND_CDC_CREATION_DATE"/>
       </inputTrees>
       <outputTrees name="output">
@@ -237,14 +237,13 @@
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="Wert" expression="row1.Wert" type="id_Double" incomingConnections="//@node.2/@nodeData/@connections.2" xpath="output.message:/bestellung/Wert"/>
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="Quelle" expression="row1.Quelle" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.3" xpath="output.message:/bestellung/Quelle"/>
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="messageType" expression="Var.messageType" incomingConnections="//@node.2/@nodeData/@connections.4" xpath="output.message:/bestellung/messageType"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="changeType" expression="Var.changeType" incomingConnections="//@node.2/@nodeData/@connections.7" xpath="output.message:/bestellung/changeType"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="changeType" expression="Var.changeType" incomingConnections="//@node.2/@nodeData/@connections.6" xpath="output.message:/bestellung/changeType"/>
           </children>
         </nodes>
       </outputTrees>
       <varTables name="Var">
         <nodes name="messageType" expression="&quot;Bestellung&quot;" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.4"/>
-        <nodes name="changeType" expression="&quot;I&quot;.equals(row1.TALEND_CDC_TYPE) ? &quot;neu&quot; : &quot;geaendert&quot; " type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.7" incomingConnections="//@node.2/@nodeData/@connections.5"/>
-        <nodes name="MessageType" expression="row1.TALEND_CDC_TYPE" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.6"/>
+        <nodes name="changeType" expression="&quot;I&quot;.equals(row1.TALEND_CDC_TYPE) ? &quot;neu&quot; : &quot;geaendert&quot; " type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.6" incomingConnections="//@node.2/@nodeData/@connections.5"/>
       </varTables>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1"/>
@@ -252,7 +251,6 @@
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.3" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@varTables.0/@nodes.0" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.6" target="//@node.2/@nodeData/@varTables.0/@nodes.1"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.6" target="//@node.2/@nodeData/@varTables.0/@nodes.2"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@varTables.0/@nodes.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5"/>
     </nodeData>
   </node>
@@ -407,14 +405,14 @@
       </inputTrees>
       <outputTrees name="copyOfoutput">
         <nodes name="message" expression="" type="id_Document" xpath="copyOfoutput/message" pattern="">
-          <children xsi:type="TalendXMLMap:OutputTreeNode" name="bestellung" expression="" type="id_String" xpath="copyOfoutput.message:/bestellung" loop="true" main="true">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="ID" expression="row2.ID" type="id_Integer" incomingConnections="//@node.5/@nodeData/@connections.0" xpath="copyOfoutput.message:/bestellung/ID"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="Vorname" expression="row2.Vorname" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.1" xpath="copyOfoutput.message:/bestellung/Vorname"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="Nachname" expression="row2.Nachname" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.2" xpath="copyOfoutput.message:/bestellung/Nachname"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="PLZ" expression="row2.PLZ" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.3" xpath="copyOfoutput.message:/bestellung/PLZ"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="Quelle" expression="row2.Quelle" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.4" xpath="copyOfoutput.message:/bestellung/Quelle"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="messageType" expression="Var.messageType" incomingConnections="//@node.5/@nodeData/@connections.5" xpath="copyOfoutput.message:/bestellung/messageType"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="changeType" expression="Var.changeType" incomingConnections="//@node.5/@nodeData/@connections.6" xpath="copyOfoutput.message:/bestellung/changeType"/>
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="kunde" expression="" type="id_String" xpath="copyOfoutput.message:/kunde" loop="true" main="true">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="ID" expression="row2.ID" type="id_Integer" incomingConnections="//@node.5/@nodeData/@connections.0" xpath="copyOfoutput.message:/kunde/ID"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="Vorname" expression="row2.Vorname" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.1" xpath="copyOfoutput.message:/kunde/Vorname"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="Nachname" expression="row2.Nachname" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.2" xpath="copyOfoutput.message:/kunde/Nachname"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="PLZ" expression="row2.PLZ" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.3" xpath="copyOfoutput.message:/kunde/PLZ"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="Quelle" expression="row2.Quelle" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.4" xpath="copyOfoutput.message:/kunde/Quelle"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="messageType" expression="Var.messageType" incomingConnections="//@node.5/@nodeData/@connections.5" xpath="copyOfoutput.message:/kunde/messageType"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="changeType" expression="Var.changeType" incomingConnections="//@node.5/@nodeData/@connections.6" xpath="copyOfoutput.message:/kunde/changeType"/>
           </children>
         </nodes>
       </outputTrees>
@@ -448,7 +446,7 @@
     <elementParameter field="TEXT" name="SERVERPORT" value="&quot;1414&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
     <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
-    <elementParameter field="TEXT" name="TO" value="&quot;NKDBestellungen&quot;"/>
+    <elementParameter field="TEXT" name="TO" value="&quot;NKDKunden&quot;"/>
     <elementParameter field="CLOSED_LIST" name="MSGTYPE" value="Queue"/>
     <elementParameter field="TEXT" name="CHANNEL" value="&quot;DC.SVRCONN&quot;" show="false"/>
     <elementParameter field="CLOSED_LIST" name="MESSAGE_BODY_TYPE" value="Text"/>

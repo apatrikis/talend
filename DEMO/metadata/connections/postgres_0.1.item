@@ -60,39 +60,6 @@
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_a5GooLDGEeaViYsflqx8BQ" name="postgres" dataManager="_a3Uf8LDGEeaViYsflqx8BQ">
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_a5GopLDGEeaViYsflqx8BQ" name="public">
-      <ownedElement xsi:type="relational:TdTable" xmi:id="_SiVf4LWFEeaz1KMgKUrQeQ" name="NKDBestellungen" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_SiU40LWFEeaz1KMgKUrQeQ" label="NKDBestellungen" tableType="TABLE">
-        <taggedValue xmi:id="_SiVf4bWFEeaz1KMgKUrQeQ" tag="Comment" value=""/>
-        <feature xsi:type="relational:TdColumn" xmi:id="_SiVf4rWFEeaz1KMgKUrQeQ" name="ID" comment="ID der Bestellung" label="ID" length="10" sourceType="INT4" talendType="id_Integer" key="true" nullable="false">
-          <taggedValue xmi:id="_SiVf47WFEeaz1KMgKUrQeQ" tag="Comment" value="ID der Bestellung"/>
-          <initialValue xsi:type="relational:TdExpression" xmi:id="_SiVf5LWFEeaz1KMgKUrQeQ" language="COLUMN_DEF"/>
-          <sqlDataType xmi:id="_SiVf5bWFEeaz1KMgKUrQeQ" name="INT4" numericPrecisionRadix="10" javaDataType="4"/>
-        </feature>
-        <feature xsi:type="relational:TdColumn" xmi:id="_SiVf5rWFEeaz1KMgKUrQeQ" name="ID_Kunde" comment="ID des Kunden" label="ID_Kunde" length="10" sourceType="INT4" talendType="id_Integer" nullable="false">
-          <taggedValue xmi:id="_SiVf57WFEeaz1KMgKUrQeQ" tag="Comment" value="ID des Kunden"/>
-          <initialValue xsi:type="relational:TdExpression" xmi:id="_SiVf6LWFEeaz1KMgKUrQeQ" language="COLUMN_DEF"/>
-          <sqlDataType xmi:id="_SiVf6bWFEeaz1KMgKUrQeQ" name="INT4" numericPrecisionRadix="10" javaDataType="4"/>
-        </feature>
-        <feature xsi:type="relational:TdColumn" xmi:id="_SiVf6rWFEeaz1KMgKUrQeQ" name="Wert" comment="Warenwert" label="Wert" length="8" precision="2" sourceType="FLOAT8" talendType="id_Double" nullable="false">
-          <taggedValue xmi:id="_SiVf67WFEeaz1KMgKUrQeQ" tag="Comment" value="Warenwert"/>
-          <initialValue xsi:type="relational:TdExpression" xmi:id="_SiVf7LWFEeaz1KMgKUrQeQ" language="COLUMN_DEF"/>
-          <sqlDataType xmi:id="_SiVf7bWFEeaz1KMgKUrQeQ" name="NUMERIC" numericPrecision="2" numericPrecisionRadix="10" javaDataType="2"/>
-        </feature>
-        <feature xsi:type="relational:TdColumn" xmi:id="_SiVf7rWFEeaz1KMgKUrQeQ" name="source" comment="Urspung der Daten" label="source" length="50" sourceType="VARCHAR" talendType="id_String" nullable="false">
-          <taggedValue xmi:id="_SiVf77WFEeaz1KMgKUrQeQ" tag="Comment" value="Urspung der Daten"/>
-          <initialValue xsi:type="relational:TdExpression" xmi:id="_SiVf8LWFEeaz1KMgKUrQeQ" language="COLUMN_DEF"/>
-          <sqlDataType xmi:id="_SiVf8bWFEeaz1KMgKUrQeQ" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12"/>
-        </feature>
-        <feature xsi:type="relational:TdColumn" xmi:id="_SiVf8rWFEeaz1KMgKUrQeQ" name="CreatedAt" label="CreatedAt" length="35" precision="6" sourceType="TIMESTAMP" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
-          <taggedValue xmi:id="_SiVf87WFEeaz1KMgKUrQeQ" tag="Comment" value=""/>
-          <initialValue xsi:type="relational:TdExpression" xmi:id="_SiVf9LWFEeaz1KMgKUrQeQ" language="COLUMN_DEF"/>
-          <sqlDataType xmi:id="_SiVf9bWFEeaz1KMgKUrQeQ" name="TIMESTAMPTZ" numericPrecision="6" numericPrecisionRadix="10" javaDataType="93" nullable="columnNullable"/>
-        </feature>
-        <feature xsi:type="relational:TdColumn" xmi:id="_SiVf9rWFEeaz1KMgKUrQeQ" name="ChangedAt" label="ChangedAt" length="35" precision="6" sourceType="TIMESTAMP" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
-          <taggedValue xmi:id="_SiVf97WFEeaz1KMgKUrQeQ" tag="Comment" value=""/>
-          <initialValue xsi:type="relational:TdExpression" xmi:id="_SiVf-LWFEeaz1KMgKUrQeQ" language="COLUMN_DEF"/>
-          <sqlDataType xmi:id="_SiVf-bWFEeaz1KMgKUrQeQ" name="TIMESTAMPTZ" numericPrecision="6" numericPrecisionRadix="10" javaDataType="93" nullable="columnNullable"/>
-        </feature>
-      </ownedElement>
       <ownedElement xsi:type="relational:TdTable" xmi:id="_SrligbWFEeaz1KMgKUrQeQ" name="NKDKunden" id="_SrligLWFEeaz1KMgKUrQeQ" label="NKDKunden" tableType="TABLE" attachedCDC="true" activatedCDC="true">
         <taggedValue xmi:id="_SrligrWFEeaz1KMgKUrQeQ" tag="Comment" value=""/>
         <feature xsi:type="relational:TdColumn" xmi:id="_Srlig7WFEeaz1KMgKUrQeQ" name="ID" comment="Kundennummer" label="ID" length="10" sourceType="INT4" talendType="id_Integer" key="true" nullable="false">

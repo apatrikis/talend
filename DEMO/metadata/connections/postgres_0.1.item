@@ -54,13 +54,45 @@
             <initialValue xmi:id="_ezw1WrWFEeaz1KMgKUrQeQ"/>
           </feature>
         </subscribers>
+        <subscribers xmi:id="_bCjikrWHEeaz1KMgKUrQeQ" name="TCDC_NKDBestellungen" id="_bCjikLWHEeaz1KMgKUrQeQ" label="TCDC_NKDBestellungen">
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCjik7WHEeaz1KMgKUrQeQ" name="TALEND_CDC_SUBSCRIBERS_NAME" label="TALEND_CDC_SUBSCRIBERS_NAME" length="50" sourceType="VARCHAR" talendType="id_String" nullable="false"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCjilLWHEeaz1KMgKUrQeQ" name="TALEND_CDC_STATE" label="TALEND_CDC_STATE" length="1" sourceType="VARCHAR" talendType="id_String"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCjilbWHEeaz1KMgKUrQeQ" name="TALEND_CDC_TYPE" label="TALEND_CDC_TYPE" length="1" sourceType="VARCHAR" talendType="id_String"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCjilrWHEeaz1KMgKUrQeQ" name="TALEND_CDC_CREATION_DATE" label="TALEND_CDC_CREATION_DATE" length="50" sourceType="DATE" talendType="id_Date"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCjil7WHEeaz1KMgKUrQeQ" name="ID" comment="ID der Bestellung" label="ID" length="10" sourceType="INT4" talendType="id_Integer" key="true" nullable="false">
+            <initialValue xmi:id="_bCjimLWHEeaz1KMgKUrQeQ"/>
+          </feature>
+        </subscribers>
+        <subscribers xmi:id="_bCjimbWHEeaz1KMgKUrQeQ" name="TCDC_VIEW_NKDBestellungen" id="_bCjikbWHEeaz1KMgKUrQeQ" label="TCDC_VIEW_NKDBestellungen">
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCjimrWHEeaz1KMgKUrQeQ" name="TALEND_CDC_SUBSCRIBERS_NAME" label="TALEND_CDC_SUBSCRIBERS_NAME" length="50" sourceType="VARCHAR" talendType="id_String" nullable="false"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCjim7WHEeaz1KMgKUrQeQ" name="TALEND_CDC_TYPE" label="TALEND_CDC_TYPE" length="1" sourceType="VARCHAR" talendType="id_String"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCjinLWHEeaz1KMgKUrQeQ" name="TALEND_CDC_CREATION_DATE" label="TALEND_CDC_CREATION_DATE" length="50" sourceType="DATE" talendType="id_Date"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCjinbWHEeaz1KMgKUrQeQ" name="ID" comment="ID der Bestellung" label="ID" length="10" sourceType="INT4" talendType="id_Integer" key="true" nullable="false">
+            <initialValue xmi:id="_bCjinrWHEeaz1KMgKUrQeQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCjin7WHEeaz1KMgKUrQeQ" name="ID_Kunde" comment="ID des Kunden" label="ID_Kunde" length="10" sourceType="INT4" talendType="id_Integer" nullable="false">
+            <initialValue xmi:id="_bCjioLWHEeaz1KMgKUrQeQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCjiobWHEeaz1KMgKUrQeQ" name="Wert" comment="Warenwert" label="Wert" length="8" precision="2" sourceType="FLOAT8" talendType="id_Double" nullable="false">
+            <initialValue xmi:id="_bCjiorWHEeaz1KMgKUrQeQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCjio7WHEeaz1KMgKUrQeQ" name="Quelle" comment="Urspung der Daten" label="Quelle" length="50" sourceType="VARCHAR" talendType="id_String" nullable="false">
+            <initialValue xmi:id="_bCjipLWHEeaz1KMgKUrQeQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCjipbWHEeaz1KMgKUrQeQ" name="CreatedAt" label="CreatedAt" length="35" precision="6" sourceType="TIMESTAMP" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+            <initialValue xmi:id="_bCjiprWHEeaz1KMgKUrQeQ"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCjip7WHEeaz1KMgKUrQeQ" name="ChangedAt" label="ChangedAt" length="35" precision="6" sourceType="TIMESTAMP" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+            <initialValue xmi:id="_bCjiqLWHEeaz1KMgKUrQeQ"/>
+          </feature>
+        </subscribers>
       </cdcTypes>
     </cdcConns>
     <parameters xmi:id="_a3Uf8rDGEeaViYsflqx8BQ" key="CONN_PARA_KEY_USERNAME" value="postgres"/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_a5GooLDGEeaViYsflqx8BQ" name="postgres" dataManager="_a3Uf8LDGEeaViYsflqx8BQ">
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_a5GopLDGEeaViYsflqx8BQ" name="public">
-      <ownedElement xsi:type="relational:TdTable" xmi:id="_C8KKUbWHEeaz1KMgKUrQeQ" name="NKDBestellungen" id="_C8KKULWHEeaz1KMgKUrQeQ" label="NKDBestellungen" tableType="TABLE">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_C8KKUbWHEeaz1KMgKUrQeQ" name="NKDBestellungen" id="_C8KKULWHEeaz1KMgKUrQeQ" label="NKDBestellungen" tableType="TABLE" attachedCDC="true" activatedCDC="true">
         <taggedValue xmi:id="_C8KKUrWHEeaz1KMgKUrQeQ" tag="Comment" value=""/>
         <feature xsi:type="relational:TdColumn" xmi:id="_C8KKU7WHEeaz1KMgKUrQeQ" name="ID" comment="ID der Bestellung" label="ID" length="10" sourceType="INT4" talendType="id_Integer" key="true" nullable="false">
           <taggedValue xmi:id="_C8KKVLWHEeaz1KMgKUrQeQ" tag="Comment" value="ID der Bestellung"/>

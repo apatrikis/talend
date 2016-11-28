@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.talend.org/mapper" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
@@ -177,153 +177,61 @@
       <column key="false" length="35" name="ChangedAt" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column defaultValue="" key="false" length="1" name="TALEND_CDC_TYPE" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="11" name="TALEND_CDC_CREATION_DATE" nullable="true" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="1" name="TALEND_CDC_TYPE" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="11" name="TALEND_CDC_CREATION_DATE" nullable="true" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="128">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_2" show="false"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
-    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="out1" name="out1">
-      <column comment="ID der Bestellung" key="true" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
-      <column comment="ID des Kunden" key="false" length="10" name="ID_Kunde" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
-      <column comment="Warenwert" key="false" length="8" name="Wert" nullable="false" pattern="" precision="2" sourceType="NUMERIC" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="msgtype" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="actiontype" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-    <nodeData xsi:type="TalendXMLMap:XmlMapData">
-      <inputTrees name="outout" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="ID" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.0" xpath="outout/ID" nullable="false"/>
-        <nodes name="ID_Kunde" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.1" xpath="outout/ID_Kunde" nullable="false"/>
-        <nodes name="Wert" type="id_Double" outgoingConnections="//@node.1/@nodeData/@connections.2" xpath="outout/Wert" nullable="false"/>
-        <nodes name="msgtype" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.3" xpath="outout/msgtype" nullable="false"/>
-        <nodes name="actiontype" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.4" xpath="outout/actiontype" nullable="false"/>
-      </inputTrees>
-      <outputTrees name="out1">
-        <nodes name="ID" expression="outout.ID" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.0" xpath="out1/ID"/>
-        <nodes name="ID_Kunde" expression="outout.ID_Kunde" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.1" xpath="out1/ID_Kunde"/>
-        <nodes name="Wert" expression="outout.Wert" type="id_Double" incomingConnections="//@node.1/@nodeData/@connections.2" xpath="out1/Wert"/>
-        <nodes name="msgtype" expression="outout.msgtype" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.3" xpath="out1/msgtype"/>
-        <nodes name="actiontype" expression="outout.actiontype" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.4" xpath="out1/actiontype"/>
-      </outputTrees>
-      <varTables name="Var" minimized="true"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.1"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.2" target="//@node.1/@nodeData/@outputTrees.0/@nodes.2"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.3" target="//@node.1/@nodeData/@outputTrees.0/@nodes.3"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.4" target="//@node.1/@nodeData/@outputTrees.0/@nodes.4"/>
-    </nodeData>
-  </node>
-  <node componentName="tFileOutputXML" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="128">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputXML_1" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/batas/Desktop/output.xml&quot;"/>
-    <elementParameter field="CHECK" name="INPUT_IS_DOCUMENT" value="false"/>
-    <elementParameter field="COLUMN_LIST" name="DOCUMENT_COL" value="ID" show="false"/>
-    <elementParameter field="TEXT" name="ROW_TAG" value="&quot;row&quot;"/>
-    <elementParameter field="CHECK" name="SPLIT" value="false"/>
-    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
-    <elementParameter field="CHECK" name="CREATE" value="true"/>
-    <elementParameter field="TABLE" name="ROOT_TAGS"/>
-    <elementParameter field="TABLE" name="MAPPING">
-      <elementValue elementRef="SCHEMA_COLUMN" value="ID"/>
-      <elementValue elementRef="AS_ATTRIBUTE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true"/>
-      <elementValue elementRef="LABEL" value="&quot;label&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ID_Kunde"/>
-      <elementValue elementRef="AS_ATTRIBUTE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true"/>
-      <elementValue elementRef="LABEL" value="&quot;label&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Wert"/>
-      <elementValue elementRef="AS_ATTRIBUTE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true"/>
-      <elementValue elementRef="LABEL" value="&quot;label&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="msgtype"/>
-      <elementValue elementRef="AS_ATTRIBUTE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true"/>
-      <elementValue elementRef="LABEL" value="&quot;label&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="actiontype"/>
-      <elementValue elementRef="AS_ATTRIBUTE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true"/>
-      <elementValue elementRef="LABEL" value="&quot;label&quot;"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="USE_DYNAMIC_GROUPING" value="false"/>
-    <elementParameter field="TABLE" name="GROUP_BY" show="false"/>
-    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
-    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/batas/Desktop/out.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
-    <elementParameter field="CHECK" name="TRIM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="out1" name="tFileOutputXML_1">
-      <column comment="ID der Bestellung" key="true" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
-      <column comment="ID des Kunden" key="false" length="10" name="ID_Kunde" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
-      <column comment="Warenwert" key="false" length="8" name="Wert" nullable="false" pattern="" precision="2" sourceType="NUMERIC" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="msgtype" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="actiontype" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    <metadata connector="FLOW" label="NKDBestellungen" name="tFileOutputDelimited_1">
+      <column comment="ID der Bestellung" key="true" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="ID der Bestellung"/>
+      </column>
+      <column comment="ID des Kunden" key="false" length="10" name="ID_Kunde" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value="ID des Kunden"/>
+      </column>
+      <column comment="Warenwert" key="false" length="8" name="Wert" nullable="false" pattern="" precision="2" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value="Warenwert"/>
+      </column>
+      <column comment="Urspung der Daten" key="false" length="50" name="source" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Urspung der Daten"/>
+      </column>
+      <column key="false" length="1" name="TALEND_CDC_TYPE" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="11" name="TALEND_CDC_CREATION_DATE" nullable="true" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="128">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
-    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_R3Tm4LV6Eeaz1KMgKUrQeQ-tMap_1-PREVIEW.bmp"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
-    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
-    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="outout">
-      <column comment="ID der Bestellung" key="true" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
-      <column comment="ID des Kunden" key="false" length="10" name="ID_Kunde" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
-      <column comment="Warenwert" key="false" length="8" name="Wert" nullable="false" pattern="" precision="2" sourceType="NUMERIC" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="msgtype" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="actiontype" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-    <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
-      <varTables sizeState="INTERMEDIATE" name="Var">
-        <mapperTableEntries name="msgtype" expression="&quot;Bestellungen&quot;" type="id_String"/>
-        <mapperTableEntries name="actiontype" expression="row1.TALEND_CDC_TYPE == &quot;I&quot; ? &quot;newRecord&quot; : &quot;updatedRecord&quot; " type="id_String"/>
-      </varTables>
-      <outputTables sizeState="INTERMEDIATE" name="outout">
-        <mapperTableEntries name="ID" expression="row1.ID " type="id_Integer"/>
-        <mapperTableEntries name="ID_Kunde" expression="row1.ID_Kunde " type="id_Integer"/>
-        <mapperTableEntries name="Wert" expression="row1.Wert " type="id_Double"/>
-        <mapperTableEntries name="msgtype" expression="Var.msgtype " type="id_String"/>
-        <mapperTableEntries name="actiontype" expression="Var.actiontype " type="id_String"/>
-      </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="ID" type="id_Integer"/>
-        <mapperTableEntries name="ID_Kunde" type="id_Integer"/>
-        <mapperTableEntries name="Wert" type="id_Double"/>
-        <mapperTableEntries name="source" type="id_String"/>
-        <mapperTableEntries name="CreatedAt" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="ChangedAt" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="TALEND_CDC_TYPE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="TALEND_CDC_CREATION_DATE" type="id_Date" nullable="true"/>
-      </inputTables>
-    </nodeData>
-  </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tPostgresqlCDC_1" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlCDC_1" target="tMap_1">
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tPostgresqlCDC_1" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlCDC_1" target="tFileOutputDelimited_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_2" target="tFileOutputXML_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="outout" lineStyle="0" metaname="outout" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tXMLMap_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="outout" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlCDC_1" show="false"/>

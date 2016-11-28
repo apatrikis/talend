@@ -791,6 +791,8 @@
       <relatedItems xmi:id="_MA1xk7MDEear8cCzwoZShQ" id="_T5fyMLDGEeaViYsflqx8BQ - QUELLE_Bestellungen" version="Latest" type="schema"/>
       <relatedItems xmi:id="_-ElBELVqEeaz1KMgKUrQeQ" id="_uoefcLVqEeaz1KMgKUrQeQ" version="Latest" type="context"/>
       <relatedItems xmi:id="_-ElBEbVqEeaz1KMgKUrQeQ" id="_nNtXALVqEeaz1KMgKUrQeQ" version="Latest" type="property"/>
+      <relatedItems xmi:id="_gM6_YLVrEeaz1KMgKUrQeQ" id="_nNtXALVqEeaz1KMgKUrQeQ - NKDKunden" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_gM6_YbVrEeaz1KMgKUrQeQ" id="_nNtXALVqEeaz1KMgKUrQeQ - QUELLE_Bestellungen" version="Latest" type="schema"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_WvWQsLMFEear8cCzwoZShQ">
       <baseItem xmi:id="_WvWQsbMFEear8cCzwoZShQ" id="_Ma8wELMCEear8cCzwoZShQ" version="0.1" type="job"/>

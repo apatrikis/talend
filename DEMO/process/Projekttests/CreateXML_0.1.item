@@ -291,8 +291,8 @@
       <elementValue elementRef="JMS_HEADER_NAME" value="JMSDestination"/>
       <elementValue elementRef="JMS_HEADER_VALUE" value="&quot;bestellung&quot;"/>
     </elementParameter>
-    <elementParameter field="CHECK" name="SET_JMS_PROPERTIES" value="true"/>
-    <elementParameter field="TABLE" name="JMS_PROPERTIES">
+    <elementParameter field="CHECK" name="SET_JMS_PROPERTIES" value="false"/>
+    <elementParameter field="TABLE" name="JMS_PROPERTIES" show="false">
       <elementValue elementRef="JMS_PROPERTIES_NAME" value="&quot;changeType&quot;"/>
       <elementValue elementRef="JMS_PROPERTIES_TYPE" value="String"/>
       <elementValue elementRef="JMS_PROPERTIES_VALUE" value="output.changeType"/>
@@ -472,10 +472,13 @@
     <elementParameter field="TEXT" name="WS_MQ_FORMAT" value="&quot;MQSTR&quot;" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DELIVERY_MODE" value="N_PERSISTENT"/>
     <elementParameter field="CLOSED_LIST" name="ACKNOWLEDGMENT_MODE" value="AUTO_ACKNOWLEDGE" show="false"/>
-    <elementParameter field="CHECK" name="SET_JMS_HEADER" value="false"/>
-    <elementParameter field="TABLE" name="JMS_HEADERS" show="false"/>
-    <elementParameter field="CHECK" name="SET_JMS_PROPERTIES" value="true"/>
-    <elementParameter field="TABLE" name="JMS_PROPERTIES">
+    <elementParameter field="CHECK" name="SET_JMS_HEADER" value="true"/>
+    <elementParameter field="TABLE" name="JMS_HEADERS">
+      <elementValue elementRef="JMS_HEADER_NAME" value="JMSType"/>
+      <elementValue elementRef="JMS_HEADER_VALUE" value="kundenoutput.changeType"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_JMS_PROPERTIES" value="false"/>
+    <elementParameter field="TABLE" name="JMS_PROPERTIES" show="false">
       <elementValue elementRef="JMS_PROPERTIES_NAME" value="&quot;changeType&quot;"/>
       <elementValue elementRef="JMS_PROPERTIES_TYPE" value="String"/>
       <elementValue elementRef="JMS_PROPERTIES_VALUE" value="kundenoutput.changeType"/>

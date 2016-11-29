@@ -86,9 +86,9 @@
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="NrE2x5vAkVTo4I4wi1Afkw=="/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
-    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;AMCSTATDATA&quot;"/>
-    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;AMCLOGDATA&quot;"/>
-    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;AMCFLOWMETERDATA&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;amcstatdata&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;amclogdata&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;amcflowmeterdata&quot;"/>
     <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
     <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
     <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>

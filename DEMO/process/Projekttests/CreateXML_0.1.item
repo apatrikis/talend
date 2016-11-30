@@ -55,37 +55,37 @@
     <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
     <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
-    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
-    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
     <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/app/TalendStudio/workspace/.metadata&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
-    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="true" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tPostgresqlOutput" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tPostgresqlOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
     <elementParameter field="TEXT" name="URL" value="" show="false"/>
     <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
     <elementParameter field="TEXT" name="DRIVER_CLASS" value="" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.56.101&quot;" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.56.101&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
     <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;postgres&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;postgres&quot;"/>
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="NrE2x5vAkVTo4I4wi1Afkw==" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="NrE2x5vAkVTo4I4wi1Afkw=="/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
-    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;amcstatdata&quot;" show="false"/>
-    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;amclogdata&quot;" show="false"/>
-    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;amcflowmeterdata&quot;" show="false"/>
-    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
-    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
-    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
-    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="true" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;amcstatdata&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;amclogdata&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;amcflowmeterdata&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="true"/>
     <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
     <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
     <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
@@ -96,11 +96,6 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
-    <elementParameter field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
-    <elementParameter field="CHECK" name="STATS_DEFAULT_PROJECTSETTING" value="true"/>
-    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE" value=""/>
-    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="BUILT_IN"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value="_-AvhwLC7EeaViYsflqx8BQ"/>
     <routinesParameter id="_OlmnwLMYEea0w-yZfg-mdA" name="DQTechnical"/>
     <routinesParameter id="_OlMYELMYEea0w-yZfg-mdA" name="DataMasking"/>
     <routinesParameter id="_Oly1ALMYEea0w-yZfg-mdA" name="DataOperation"/>
@@ -208,8 +203,8 @@
       <column comment="" key="false" length="35" name="ChangedAt" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column defaultValue="" key="false" length="1" name="TALEND_CDC_TYPE" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="11" name="TALEND_CDC_CREATION_DATE" nullable="true" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="1" name="TALEND_CDC_TYPE" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="11" name="TALEND_CDC_CREATION_DATE" nullable="true" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
@@ -262,249 +257,41 @@
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@varTables.0/@nodes.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.1"/>
     </nodeData>
   </node>
-  <node componentName="tMomOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="224">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMomOutput_1" show="false"/>
-    <elementParameter field="CHECK" name="USE_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMomConnection_1"/>
-    <elementParameter field="CHECK" name="FAILOVER" value="false" show="false"/>
-    <elementParameter field="CHECK" name="STATIC" value="false" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_PARAM_FAILOVER" value="&quot;?randomize=false&quot;" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_PARAM_STATIC" value="&quot;?transport.maxReconnectDelay=5000&amp;transport.useExponentialBackOff=false&quot;" show="false"/>
-    <elementParameter field="TABLE" name="SERVERS" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="SERVER" value="WebSphere" show="false"/>
-    <elementParameter field="CHECK" name="USE_SSL" value="false" show="false"/>
-    <elementParameter field="LABEL" name="USE_SSL_NOTE" value="Notice: You should use tSetKeysore or JVM arguments to specify keystore or truststore" show="false"/>
-    <elementParameter field="TEXT" name="SERVERADDRESS" value="&quot;localhost&quot;" show="false"/>
-    <elementParameter field="TEXT" name="SERVERPORT" value="&quot;1414&quot;" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
-    <elementParameter field="TEXT" name="TO" value="&quot;NKDBestellungen&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="MSGTYPE" value="Queue"/>
-    <elementParameter field="TEXT" name="CHANNEL" value="&quot;DC.SVRCONN&quot;" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="MESSAGE_BODY_TYPE" value="Text"/>
-    <elementParameter field="CHECK" name="IS_TRANSACTED" value="false" show="false"/>
-    <elementParameter field="TEXT" name="QM" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="QUEUE" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="IS_USE_MESSAGE_ID" value="false"/>
-    <elementParameter field="TABLE" name="ADDITIONAL_OPTIONS" show="false"/>
-    <elementParameter field="CHECK" name="USE_FORMAT" value="false" show="false"/>
-    <elementParameter field="TEXT" name="WS_MQ_FORMAT" value="&quot;MQSTR&quot;" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DELIVERY_MODE" value="N_PERSISTENT"/>
-    <elementParameter field="CLOSED_LIST" name="ACKNOWLEDGMENT_MODE" value="AUTO_ACKNOWLEDGE" show="false"/>
-    <elementParameter field="CHECK" name="SET_JMS_HEADER" value="true"/>
-    <elementParameter field="TABLE" name="JMS_HEADERS">
-      <elementValue elementRef="JMS_HEADER_NAME" value="JMSType"/>
-      <elementValue elementRef="JMS_HEADER_VALUE" value="outBestellungen.changeType"/>
+  <node componentName="tFileOutputXML" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputXML_1" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/batas/Desktop/output.xml&quot;"/>
+    <elementParameter field="CHECK" name="INPUT_IS_DOCUMENT" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="DOCUMENT_COL" value="message" show="false"/>
+    <elementParameter field="TEXT" name="ROW_TAG" value="&quot;row&quot;"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="TABLE" name="ROOT_TAGS"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="message"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="changeType"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;"/>
     </elementParameter>
-    <elementParameter field="CHECK" name="SET_JMS_PROPERTIES" value="false"/>
-    <elementParameter field="TABLE" name="JMS_PROPERTIES" show="false">
-      <elementValue elementRef="JMS_PROPERTIES_NAME" value="&quot;changeType&quot;"/>
-      <elementValue elementRef="JMS_PROPERTIES_TYPE" value="String"/>
-      <elementValue elementRef="JMS_PROPERTIES_VALUE" value="output.changeType"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="SET_MQMD_FIELDS" value="false" show="false"/>
-    <elementParameter field="TABLE" name="MQMD_FIELDS" show="false"/>
-    <elementParameter field="CHECK" name="USE_MQ_HEADER" value="false" show="false"/>
-    <elementParameter field="CHECK" name="USE_FIX_MQRFH2" value="false" show="false"/>
-    <elementParameter field="TABLE" name="MQRFH2_FIXED_FIELD" show="false"/>
-    <elementParameter field="CHECK" name="USE_MQRFH2_MCD" value="false" show="false"/>
-    <elementParameter field="TABLE" name="MQRFH2_MCD_FIELD" show="false"/>
-    <elementParameter field="CHECK" name="USE_MQRFH2_JMS" value="false" show="false"/>
-    <elementParameter field="TABLE" name="MQRFH2_JMS_FIELD" show="false"/>
-    <elementParameter field="CHECK" name="USE_MQRFH2_USR" value="false" show="false"/>
-    <elementParameter field="TABLE" name="MQRFH2_USR_FIELD" show="false"/>
-    <elementParameter field="CHECK" name="SET_MQ_SSL_CIPHER" value="false" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="MQ_SSL_CIPHER" value="SSL_RSA_WITH_NULL_MD5" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="Zielqueue"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tMomOutput_1">
-      <column defaultValue="" key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tPostgresqlCDC" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="416">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlCDC_2" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_-AvhwLC7EeaViYsflqx8BQ" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.56.101&quot;"/>
-    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;postgres&quot;"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="NrE2x5vAkVTo4I4wi1Afkw=="/>
-    <elementParameter field="DBTABLE" name="DATATABLE" value="&quot;NKDKunden&quot;"/>
-    <elementParameter field="TEXT" name="SUSCRIBER" value="&quot;Import_NKDKunden&quot;"/>
-    <elementParameter field="LABEL" name="EVENTS_TYPE" value=""/>
-    <elementParameter field="CHECK" name="EVENTS_TYPE_INSERT" value="true"/>
-    <elementParameter field="CHECK" name="EVENTS_TYPE_UPDATE" value="true"/>
-    <elementParameter field="CHECK" name="EVENTS_TYPE_DELETE" value="true"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_GROUPING" value="false"/>
+    <elementParameter field="TABLE" name="GROUP_BY" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="KEEP_CDC_DATAS" value="false"/>
-    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
-    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
-    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
-    <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Vorname"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nachname"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PLZ"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Quelle"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ChangedAt"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedAt"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TALEND_CDC_TYPE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TALEND_CDC_CREATION_DATE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="__DATATABLE__"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="TRIM" value="false" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="NKDKunden" name="tPostgresqlCDC_2">
-      <column comment="Kundennummer" key="true" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value="Kundennummer"/>
-      </column>
-      <column comment="Vorname Kunde" key="false" length="50" name="Vorname" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value="Vorname Kunde"/>
-      </column>
-      <column comment="Nachname Kunde" key="false" length="50" name="Nachname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value="Nachname Kunde"/>
-      </column>
-      <column comment="PLZ / ZIP Code des Kunden" key="false" length="10" name="PLZ" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value="PLZ / ZIP Code des Kunden"/>
-      </column>
-      <column comment="Urspung der Daten" key="false" length="50" name="Quelle" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value="Urspung der Daten"/>
-      </column>
-      <column comment="" key="false" length="35" name="ChangedAt" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="35" name="CreatedAt" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column defaultValue="" key="false" length="1" name="TALEND_CDC_TYPE" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="11" name="TALEND_CDC_CREATION_DATE" nullable="true" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
-      <additionalProperties key="Comment" value=""/>
-    </metadata>
-  </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="416">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_2" show="false"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
-    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="Datenbank zu XML"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="output" name="outKunden">
+    <metadata connector="FLOW" label="outBestellungen" name="tFileOutputXML_1">
       <column comment="" key="false" length="-1" name="message" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="changeType" nullable="false" pattern="" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-    <nodeData xsi:type="TalendXMLMap:XmlMapData">
-      <inputTrees name="row2" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="ID" type="id_Integer" outgoingConnections="//@node.5/@nodeData/@connections.0" xpath="row2/ID" nullable="false"/>
-        <nodes name="Vorname" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.1" xpath="row2/Vorname" nullable="false"/>
-        <nodes name="Nachname" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.2" xpath="row2/Nachname"/>
-        <nodes name="PLZ" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.3" xpath="row2/PLZ" nullable="false"/>
-        <nodes name="Quelle" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.4" xpath="row2/Quelle" nullable="false"/>
-        <nodes name="ChangedAt" type="id_Date" xpath="row2/ChangedAt"/>
-        <nodes name="CreatedAt" type="id_Date" xpath="row2/CreatedAt"/>
-        <nodes name="TALEND_CDC_TYPE" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.7" xpath="row2/TALEND_CDC_TYPE"/>
-        <nodes name="TALEND_CDC_CREATION_DATE" type="id_Date" xpath="row2/TALEND_CDC_CREATION_DATE"/>
-      </inputTrees>
-      <outputTrees name="outKunden">
-        <nodes name="message" expression="" type="id_Document" xpath="outKunden/message" pattern="">
-          <children xsi:type="TalendXMLMap:OutputTreeNode" name="kunde" expression="" type="id_String" xpath="outKunden.message:/kunde" loop="true" main="true">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="ID" expression="row2.ID" type="id_Integer" incomingConnections="//@node.5/@nodeData/@connections.0" xpath="outKunden.message:/kunde/ID"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="Vorname" expression="row2.Vorname" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.1" xpath="outKunden.message:/kunde/Vorname"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="Nachname" expression="row2.Nachname" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.2" xpath="outKunden.message:/kunde/Nachname"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="PLZ" expression="row2.PLZ" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.3" xpath="outKunden.message:/kunde/PLZ"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="Quelle" expression="row2.Quelle" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.4" xpath="outKunden.message:/kunde/Quelle"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="messageType" expression="Var.messageType" incomingConnections="//@node.5/@nodeData/@connections.5" xpath="outKunden.message:/kunde/messageType"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="changeType" expression="Var.changeType" incomingConnections="//@node.5/@nodeData/@connections.6" xpath="outKunden.message:/kunde/changeType"/>
-          </children>
-        </nodes>
-        <nodes name="changeType" expression="Var.changeType" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.8" xpath="outKunden/changeType"/>
-      </outputTrees>
-      <varTables name="Var">
-        <nodes name="messageType" expression="&quot;Kunde&quot;" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.5"/>
-        <nodes name="changeType" expression="&quot;I&quot;.equals(row2.TALEND_CDC_TYPE) ? &quot;neu&quot; : &quot;geaendert&quot; " type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.6 //@node.5/@nodeData/@connections.8" incomingConnections="//@node.5/@nodeData/@connections.7"/>
-      </varTables>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.1" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.2" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.3" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.4" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@varTables.0/@nodes.0" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@varTables.0/@nodes.1" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.6"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.7" target="//@node.5/@nodeData/@varTables.0/@nodes.1"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@varTables.0/@nodes.1" target="//@node.5/@nodeData/@outputTrees.0/@nodes.1"/>
-    </nodeData>
-  </node>
-  <node componentName="tMomOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="416">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMomOutput_2" show="false"/>
-    <elementParameter field="CHECK" name="USE_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMomConnection_1"/>
-    <elementParameter field="CHECK" name="FAILOVER" value="false" show="false"/>
-    <elementParameter field="CHECK" name="STATIC" value="false" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_PARAM_FAILOVER" value="&quot;?randomize=false&quot;" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_PARAM_STATIC" value="&quot;?transport.maxReconnectDelay=5000&amp;transport.useExponentialBackOff=false&quot;" show="false"/>
-    <elementParameter field="TABLE" name="SERVERS" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="SERVER" value="WebSphere" show="false"/>
-    <elementParameter field="CHECK" name="USE_SSL" value="false" show="false"/>
-    <elementParameter field="LABEL" name="USE_SSL_NOTE" value="Notice: You should use tSetKeysore or JVM arguments to specify keystore or truststore" show="false"/>
-    <elementParameter field="TEXT" name="SERVERADDRESS" value="&quot;localhost&quot;" show="false"/>
-    <elementParameter field="TEXT" name="SERVERPORT" value="&quot;1414&quot;" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
-    <elementParameter field="TEXT" name="TO" value="&quot;NKDKunden&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="MSGTYPE" value="Queue"/>
-    <elementParameter field="TEXT" name="CHANNEL" value="&quot;DC.SVRCONN&quot;" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="MESSAGE_BODY_TYPE" value="Text"/>
-    <elementParameter field="CHECK" name="IS_TRANSACTED" value="false" show="false"/>
-    <elementParameter field="TEXT" name="QM" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="QUEUE" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="IS_USE_MESSAGE_ID" value="false"/>
-    <elementParameter field="TABLE" name="ADDITIONAL_OPTIONS" show="false"/>
-    <elementParameter field="CHECK" name="USE_FORMAT" value="false" show="false"/>
-    <elementParameter field="TEXT" name="WS_MQ_FORMAT" value="&quot;MQSTR&quot;" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DELIVERY_MODE" value="N_PERSISTENT"/>
-    <elementParameter field="CLOSED_LIST" name="ACKNOWLEDGMENT_MODE" value="AUTO_ACKNOWLEDGE" show="false"/>
-    <elementParameter field="CHECK" name="SET_JMS_HEADER" value="true"/>
-    <elementParameter field="TABLE" name="JMS_HEADERS">
-      <elementValue elementRef="JMS_HEADER_NAME" value="JMSType"/>
-      <elementValue elementRef="JMS_HEADER_VALUE" value="outKunden.changeType"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="SET_JMS_PROPERTIES" value="false"/>
-    <elementParameter field="TABLE" name="JMS_PROPERTIES" show="false">
-      <elementValue elementRef="JMS_PROPERTIES_NAME" value="&quot;changeType&quot;"/>
-      <elementValue elementRef="JMS_PROPERTIES_TYPE" value="String"/>
-      <elementValue elementRef="JMS_PROPERTIES_VALUE" value="kundenoutput.changeType"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="SET_MQMD_FIELDS" value="false" show="false"/>
-    <elementParameter field="TABLE" name="MQMD_FIELDS" show="false"/>
-    <elementParameter field="CHECK" name="USE_MQ_HEADER" value="false" show="false"/>
-    <elementParameter field="CHECK" name="USE_FIX_MQRFH2" value="false" show="false"/>
-    <elementParameter field="TABLE" name="MQRFH2_FIXED_FIELD" show="false"/>
-    <elementParameter field="CHECK" name="USE_MQRFH2_MCD" value="false" show="false"/>
-    <elementParameter field="TABLE" name="MQRFH2_MCD_FIELD" show="false"/>
-    <elementParameter field="CHECK" name="USE_MQRFH2_JMS" value="false" show="false"/>
-    <elementParameter field="TABLE" name="MQRFH2_JMS_FIELD" show="false"/>
-    <elementParameter field="CHECK" name="USE_MQRFH2_USR" value="false" show="false"/>
-    <elementParameter field="TABLE" name="MQRFH2_USR_FIELD" show="false"/>
-    <elementParameter field="CHECK" name="SET_MQ_SSL_CIPHER" value="false" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="MQ_SSL_CIPHER" value="SSL_RSA_WITH_NULL_MD5" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="Zielqueue"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tMomOutput_2">
-      <column defaultValue="" key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tMomConnection_1" offsetLabelX="0" offsetLabelY="0" source="tMomConnection_1" target="tPostgresqlCDC_1">
@@ -514,20 +301,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tPostgresqlCDC_1" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlCDC_1" target="tPostgresqlCDC_2">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="outBestellungen" lineStyle="0" metaname="outBestellungen" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tMomOutput_1">
+  <connection connectorName="FLOW" label="outBestellungen" lineStyle="0" metaname="outBestellungen" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tFileOutputXML_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="outBestellungen" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tPostgresqlCDC_2" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlCDC_2" target="tXMLMap_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="outKunden" lineStyle="0" metaname="outKunden" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_2" target="tMomOutput_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="outKunden" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMomConnection_1" show="false"/>
@@ -536,11 +312,6 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlCDC_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlCDC_2" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>

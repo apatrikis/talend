@@ -220,7 +220,7 @@
         <nodes name="id" type="id_Integer" outgoingConnections="//@node.4/@nodeData/@connections.0" xpath="row1/id" nullable="false"/>
         <nodes name="name" type="id_String" outgoingConnections="//@node.4/@nodeData/@connections.1" xpath="row1/name"/>
       </inputTrees>
-      <outputTrees activateCondensedTool="true" name="out">
+      <outputTrees activateCondensedTool="true" name="out" allInOne="true">
         <nodes name="message" expression="" type="id_Document" xpath="out/message">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="rows" expression="" type="id_String" xpath="out.message:/rows" main="true">
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="row" expression="" type="id_String" xpath="out.message:/rows/row" loop="true" main="true">

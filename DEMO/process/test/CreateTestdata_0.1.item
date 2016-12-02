@@ -117,7 +117,7 @@
     <elementParameter field="TEXT" name="NB_ROWS" value="1000" show="false"/>
     <elementParameter field="TABLE" name="VALUES" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
-      <elementValue elementRef="ARRAY" value="Numeric.sequence(&quot;id&quot; ,1 ,100 )"/>
+      <elementValue elementRef="ARRAY" value="Numeric.sequence(&quot;id&quot; ,1 ,1 )"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="name"/>
       <elementValue elementRef="ARRAY" value="DataMasking.createRandomString(20 ,&quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890&quot; )"/>
     </elementParameter>

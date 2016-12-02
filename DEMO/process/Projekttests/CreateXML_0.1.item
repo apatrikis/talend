@@ -159,7 +159,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="SELECT &#xD;&#xA;  \&quot;ID\&quot;, &#xD;&#xA;  \&quot;ID_Kunde\&quot;, &#xD;&#xA;  \&quot;Wert\&quot;, &#xD;&#xA;  \&quot;Quelle\&quot;, &#xD;&#xA;  \&quot;CreatedAt\&quot;, &#xD;&#xA;  \&quot;ChangedAt\&quot;&#xD;&#xA;FROM (&#xD;&#xA;SELECT&#xD;&#xA;  row_number() over (order by \&quot;CreatedAt\&quot;) as rn,&#xA;  \&quot;postgres\&quot;.\&quot;public\&quot;.\&quot;NKDBestellungen\&quot;.\&quot;ID\&quot;, &#xA;  \&quot;postgres\&quot;.\&quot;public\&quot;.\&quot;NKDBestellungen\&quot;.\&quot;ID_Kunde\&quot;, &#xA;  \&quot;postgres\&quot;.\&quot;public\&quot;.\&quot;NKDBestellungen\&quot;.\&quot;Wert\&quot;, &#xA;  \&quot;postgres\&quot;.\&quot;public\&quot;.\&quot;NKDBestellungen\&quot;.\&quot;Quelle\&quot;, &#xA;  \&quot;postgres\&quot;.\&quot;public\&quot;.\&quot;NKDBestellungen\&quot;.\&quot;CreatedAt\&quot;, &#xA;  \&quot;postgres\&quot;.\&quot;public\&quot;.\&quot;NKDBestellungen\&quot;.\&quot;ChangedAt\&quot;&#xA;FROM \&quot;postgres\&quot;.\&quot;public\&quot;.\&quot;NKDBestellungen\&quot;&#xD;&#xA;WHERE \&quot;postgres\&quot;.\&quot;public\&quot;.\&quot;NKDBestellungen\&quot;.\&quot;ChangedAt\&quot; > to_timestamp(20161201)&#xD;&#xA;) SUBSELECT&#xD;&#xA;WHERE SUBSELECT.rn &lt;=10000&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xD;&#xA;  \&quot;ID\&quot;, &#xD;&#xA;  \&quot;ID_Kunde\&quot;, &#xD;&#xA;  \&quot;Wert\&quot;, &#xD;&#xA;  \&quot;Quelle\&quot;, &#xD;&#xA;  \&quot;CreatedAt\&quot;, &#xD;&#xA;  \&quot;ChangedAt\&quot;&#xD;&#xA;FROM (&#xD;&#xA;SELECT&#xD;&#xA;  row_number() over (order by \&quot;CreatedAt\&quot;) as rn,&#xA;  \&quot;postgres\&quot;.\&quot;public\&quot;.\&quot;NKDBestellungen\&quot;.\&quot;ID\&quot;, &#xA;  \&quot;postgres\&quot;.\&quot;public\&quot;.\&quot;NKDBestellungen\&quot;.\&quot;ID_Kunde\&quot;, &#xA;  \&quot;postgres\&quot;.\&quot;public\&quot;.\&quot;NKDBestellungen\&quot;.\&quot;Wert\&quot;, &#xA;  \&quot;postgres\&quot;.\&quot;public\&quot;.\&quot;NKDBestellungen\&quot;.\&quot;Quelle\&quot;, &#xA;  \&quot;postgres\&quot;.\&quot;public\&quot;.\&quot;NKDBestellungen\&quot;.\&quot;CreatedAt\&quot;, &#xA;  \&quot;postgres\&quot;.\&quot;public\&quot;.\&quot;NKDBestellungen\&quot;.\&quot;ChangedAt\&quot;&#xA;FROM \&quot;postgres\&quot;.\&quot;public\&quot;.\&quot;NKDBestellungen\&quot;&#xD;&#xA;WHERE \&quot;postgres\&quot;.\&quot;public\&quot;.\&quot;NKDBestellungen\&quot;.\&quot;ChangedAt\&quot; > to_timestamp(20161201)&#xD;&#xA;) SUBSELECT&#xD;&#xA;WHERE SUBSELECT.rn &lt;=10000&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -234,7 +234,7 @@
         <nodes name="Quelle" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.6" xpath="row2/Quelle" nullable="false"/>
         <nodes name="CreatedAt" type="id_Date" xpath="row2/CreatedAt"/>
         <nodes name="ChangedAt" type="id_Date" xpath="row2/ChangedAt"/>
-        <nodes name="TALEND_CDC_TYPE" type="id_String" xpath="row2/TALEND_CDC_TYPE"/>
+        <nodes name="TALEND_CDC_TYPE" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.8" xpath="row2/TALEND_CDC_TYPE"/>
         <nodes name="TALEND_CDC_CREATION_DATE" type="id_Date" xpath="row2/TALEND_CDC_CREATION_DATE"/>
       </inputTrees>
       <outputTrees activateCondensedTool="true" name="copyOfcopyOfoutBestellungen" rejectInnerJoin="true" allInOne="true">
@@ -252,7 +252,7 @@
       </outputTrees>
       <varTables name="Var">
         <nodes name="messageType" expression="&quot;Bestellung&quot;" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.0"/>
-        <nodes name="MessageType" expression="&quot;I&quot;.equals(row1.TALEND_CDC_TYPE) ? &quot;neu&quot; : &quot;geaendert&quot; " type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.1 //@node.2/@nodeData/@connections.2"/>
+        <nodes name="MessageType" expression="&quot;I&quot;.equals(row2.TALEND_CDC_TYPE) ? &quot;neu&quot; : &quot;geaendert&quot; " type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.1 //@node.2/@nodeData/@connections.2" incomingConnections="//@node.2/@nodeData/@connections.8"/>
       </varTables>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@varTables.0/@nodes.0" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@varTables.0/@nodes.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5"/>
@@ -262,6 +262,7 @@
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.1/@nodes.2" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.1/@nodes.3" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3"/>
       <connections xsi:type="TalendXMLMap:LookupConnection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0" target="//@node.2/@nodeData/@inputTrees.1/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.1/@nodes.6" target="//@node.2/@nodeData/@varTables.0/@nodes.1"/>
     </nodeData>
   </node>
   <node componentName="tMomOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="352">

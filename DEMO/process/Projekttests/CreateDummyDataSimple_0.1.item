@@ -123,7 +123,7 @@
   </parameters>
   <node componentName="tRowGenerator" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRowGenerator_1" show="false"/>
-    <elementParameter field="TEXT" name="NB_ROWS" value="500" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="50000" show="false"/>
     <elementParameter field="TABLE" name="VALUES" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="ID"/>
       <elementValue elementRef="ARRAY" value="Numeric.sequence(&quot;bestellungen&quot; ,1 ,1 )"/>
@@ -146,7 +146,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value="&quot;C:/Users/batas/Desktop/temp&quot;"/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_RJOdELMCEear8cCzwoZShQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_6DlwQLh9EeaXPKHOBB-gqg-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
@@ -164,27 +164,10 @@
       </column>
       <additionalProperties key="Comment" value=""/>
     </metadata>
-    <metadata connector="FLOW" label="QUELLE_Bestellungen" name="outupdate">
-      <column comment="" key="true" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="ID_Kunde" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="8" name="Wert" nullable="false" pattern="" precision="2" sourceType="FLOAT8" type="id_Double" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <additionalProperties key="Comment" value=""/>
-    </metadata>
     <nodeData xsi:type="MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="outinsert" activateCondensedTool="true" rejectInnerJoin="true">
-        <mapperTableEntries name="ID" expression="row1.ID" type="id_Integer"/>
-        <mapperTableEntries name="ID_Kunde" expression="row1.ID_Kunde" type="id_Integer"/>
-        <mapperTableEntries name="Wert" expression="row1.Wert" type="id_Double"/>
-      </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="outupdate" activateCondensedTool="true">
+      <outputTables sizeState="INTERMEDIATE" name="outinsert">
         <mapperTableEntries name="ID" expression="row1.ID" type="id_Integer"/>
         <mapperTableEntries name="ID_Kunde" expression="row1.ID_Kunde" type="id_Integer"/>
         <mapperTableEntries name="Wert" expression="row1.Wert" type="id_Double"/>
@@ -194,93 +177,7 @@
         <mapperTableEntries name="ID_Kunde" type="id_Integer"/>
         <mapperTableEntries name="Wert" type="id_Double"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row2" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true">
-        <mapperTableEntries name="ID" expression="row1.ID " type="id_Integer" operator="="/>
-        <mapperTableEntries name="ID_Kunde" type="id_Integer"/>
-        <mapperTableEntries name="Wert" type="id_Double"/>
-      </inputTables>
     </nodeData>
-  </node>
-  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlOutput_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_T5fyMLDGEeaViYsflqx8BQ" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.56.101&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;postgres&quot;"/>
-    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="NrE2x5vAkVTo4I4wi1Afkw=="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;QUELLE_Bestellungen&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
-    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
-    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false" show="false"/>
-    <elementParameter field="CHECK" name="SPATIAL_INDEX" value="false" show="false"/>
-    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" value="false" show="false"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
-    <elementParameter field="CHECK" name="SAVE_POINT" value="false" show="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
-    <elementParameter field="TABLE" name="ADD_COLS"/>
-    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
-    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="ID"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ID_Kunde"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Wert"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
-    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
-    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
-    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
-    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="QUELLE_Bestellungen" name="tPostgresqlOutput_1">
-      <column comment="" key="true" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="ID_Kunde" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="8" name="Wert" nullable="false" pattern="" precision="2" sourceType="FLOAT8" type="id_Double" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <additionalProperties key="Comment" value=""/>
-    </metadata>
-    <metadata connector="REJECT" label="QUELLE_Bestellungen" name="REJECT">
-      <column comment="" key="true" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="ID_Kunde" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="8" name="Wert" nullable="false" pattern="" precision="2" sourceType="FLOAT8" type="id_Double" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <additionalProperties key="Comment" value=""/>
-    </metadata>
   </node>
   <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlOutput_3" show="false"/>
@@ -298,7 +195,7 @@
     <elementParameter field="PASSWORD" name="PASS" value="NrE2x5vAkVTo4I4wi1Afkw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;QUELLE_Bestellungen&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
-    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT_OR_UPDATE"/>
     <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false" show="false"/>
     <elementParameter field="CHECK" name="SPATIAL_INDEX" value="false" show="false"/>
     <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" value="false" show="false"/>
@@ -332,8 +229,8 @@
     </elementParameter>
     <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
-    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
-    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="QUELLE_Bestellungen" name="tPostgresqlOutput_3">
@@ -363,73 +260,13 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlInput_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_T5fyMLDGEeaViYsflqx8BQ" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.56.101&quot;"/>
-    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;postgres&quot;"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="NrE2x5vAkVTo4I4wi1Afkw=="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;QUELLE_Bestellungen&quot;"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  \&quot;postgres\&quot;.\&quot;public\&quot;.\&quot;QUELLE_Bestellungen\&quot;.\&quot;ID\&quot;, &#xA;  \&quot;postgres\&quot;.\&quot;public\&quot;.\&quot;QUELLE_Bestellungen\&quot;.\&quot;ID_Kunde\&quot;, &#xA;  \&quot;postgres\&quot;.\&quot;public\&quot;.\&quot;QUELLE_Bestellungen\&quot;.\&quot;Wert\&quot;&#xA;FROM \&quot;postgres\&quot;.\&quot;public\&quot;.\&quot;QUELLE_Bestellungen\&quot;&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
-    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
-    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
-    <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ID_Kunde"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Wert"/>
-      <elementValue elementRef="TRIM" value="false"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="QUELLE_Bestellungen" name="tPostgresqlInput_1">
-      <column comment="" key="true" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="ID_Kunde" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="8" name="Wert" nullable="false" pattern="" precision="2" sourceType="FLOAT8" type="id_Double" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <additionalProperties key="Comment" value=""/>
-    </metadata>
-  </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tRowGenerator_1" offsetLabelX="0" offsetLabelY="0" source="tRowGenerator_1" target="tMap_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="outinsert" lineStyle="0" metaname="outinsert" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tPostgresqlOutput_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+  <connection connectorName="FLOW" label="outinsert" lineStyle="0" metaname="outinsert" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tPostgresqlOutput_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="outinsert" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="outupdate" lineStyle="0" metaname="outupdate" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tPostgresqlOutput_3">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="outupdate" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tPostgresqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlInput_1" target="tMap_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRowGenerator_1" show="false"/>

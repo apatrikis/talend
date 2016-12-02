@@ -227,7 +227,7 @@
         <nodes name="CreatedAt" type="id_Date" xpath="row1/CreatedAt"/>
         <nodes name="ChangedAt" type="id_Date" xpath="row1/ChangedAt"/>
       </inputTrees>
-      <inputTrees activateCondensedTool="true" name="row2" lookup="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true">
+      <inputTrees activateCondensedTool="true" name="row2" lookup="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <nodes name="ID" expression="row1.ID" type="id_Integer" outgoingConnections="//@node.2/@nodeData/@connections.3" xpath="row2/ID" lookupIncomingConnections="//@node.2/@nodeData/@connections.7" nullable="false"/>
         <nodes name="ID_Kunde" type="id_Integer" outgoingConnections="//@node.2/@nodeData/@connections.4" xpath="row2/ID_Kunde" nullable="false"/>
         <nodes name="Wert" type="id_Double" outgoingConnections="//@node.2/@nodeData/@connections.5" xpath="row2/Wert" nullable="false"/>

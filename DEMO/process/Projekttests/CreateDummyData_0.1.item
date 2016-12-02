@@ -123,8 +123,6 @@
   </parameters>
   <node componentName="tRowGenerator" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRowGenerator_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_T5fyMLDGEeaViYsflqx8BQ - QUELLE_Bestellungen" show="false"/>
     <elementParameter field="TEXT" name="NB_ROWS" value="500" show="false"/>
     <elementParameter field="TABLE" name="VALUES" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="ID"/>
@@ -137,7 +135,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="QUELLE_Bestellungen" name="tRowGenerator_1">
-      <column comment="" key="false" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="true" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="ID_Kunde" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="Wert" nullable="false" pattern="" precision="2" sourceType="FLOAT8" type="id_Double" usefulColumn="true"/>
       <additionalProperties key="Comment" value=""/>
@@ -155,7 +153,7 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="QUELLE_Bestellungen" name="out">
-      <column comment="" key="false" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="true" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="ID_Kunde" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
@@ -167,7 +165,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out">
         <mapperTableEntries name="ID" expression="row1.ID" type="id_Integer"/>
@@ -198,8 +196,6 @@
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;QUELLE_Bestellungen&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" value="_T5fyMLDGEeaViYsflqx8BQ - QUELLE_Bestellungen" show="false"/>
     <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false" show="false"/>
     <elementParameter field="CHECK" name="SPATIAL_INDEX" value="false" show="false"/>
     <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" value="false" show="false"/>
@@ -238,7 +234,7 @@
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="QUELLE_Bestellungen" name="tPostgresqlOutput_1">
-      <column comment="" key="false" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="true" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="ID_Kunde" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
@@ -250,7 +246,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <metadata connector="REJECT" label="QUELLE_Bestellungen" name="REJECT">
-      <column comment="" key="false" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+      <column comment="" key="true" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="ID_Kunde" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">

@@ -281,7 +281,7 @@
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
     <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
     <elementParameter field="TEXT" name="TO" value="&quot;Bestellungen&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="MSGTYPE" value="Topic"/>
+    <elementParameter field="CLOSED_LIST" name="MSGTYPE" value="Queue"/>
     <elementParameter field="TEXT" name="CHANNEL" value="&quot;DC.SVRCONN&quot;" show="false"/>
     <elementParameter field="CLOSED_LIST" name="MESSAGE_BODY_TYPE" value="Text"/>
     <elementParameter field="CHECK" name="IS_TRANSACTED" value="false" show="false"/>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:XmlFileConnection xmi:id="_cu4OULikEeaXPKHOBB-gqg" name="Bestellungen" dataPackage="_cu4OWLikEeaXPKHOBB-gqg" XmlFilePath="C:/Users/batas/Desktop/bestellungen.xml" Encoding="UTF-8" fileContent="EFBBBF3C62657374656C6C756E67656E3E0D0A3C62657374656C6C756E673E0D0A3C49443E333432313C2F49443E0D0A3C49445F4B756E64653E3135373C2F49445F4B756E64653E0D0A3C576572743E393939302E303C2F576572743E0D0A3C5175656C6C653E5175656C6C652E42657374656C6C756E67656E3C2F5175656C6C653E0D0A3C6D657373616765547970653E42657374656C6C756E673C2F6D657373616765547970653E0D0A3C6368616E6765547970653E746573743C2F6368616E6765547970653E0D0A3C2F62657374656C6C756E673E0D0A3C2F62657374656C6C756E67656E3E">
+    <schema xmi:id="_cu4OUbikEeaXPKHOBB-gqg" LimitBoucle="50" AbsoluteXPathQuery="/bestellungen/bestellung">
+      <schemaTargets xmi:id="_cu4OUrikEeaXPKHOBB-gqg" RelativeXPathQuery="ID" TagName="ID"/>
+      <schemaTargets xmi:id="_cu4OU7ikEeaXPKHOBB-gqg" RelativeXPathQuery="ID_Kunde" TagName="ID_Kunde"/>
+      <schemaTargets xmi:id="_cu4OVLikEeaXPKHOBB-gqg" RelativeXPathQuery="Wert" TagName="Wert"/>
+      <schemaTargets xmi:id="_cu4OVbikEeaXPKHOBB-gqg" RelativeXPathQuery="Quelle" TagName="Quelle"/>
+      <schemaTargets xmi:id="_cu4OVrikEeaXPKHOBB-gqg" RelativeXPathQuery="messageType" TagName="messageType"/>
+      <schemaTargets xmi:id="_cu4OV7ikEeaXPKHOBB-gqg" RelativeXPathQuery="changeType" TagName="changeType"/>
+    </schema>
+  </TalendMetadata:XmlFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_cu4OWLikEeaXPKHOBB-gqg" name="default" dataManager="_cu4OULikEeaXPKHOBB-gqg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_cu4OWbikEeaXPKHOBB-gqg" id="_QW0FcLikEeaXPKHOBB-gqg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cu4OWrikEeaXPKHOBB-gqg" label="ID" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cu4OW7ikEeaXPKHOBB-gqg" label="ID_Kunde" length="3" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cu4OXLikEeaXPKHOBB-gqg" label="Wert" length="9" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cu4OXbikEeaXPKHOBB-gqg" label="Quelle" length="30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cu4OXrikEeaXPKHOBB-gqg" label="messageType" length="30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cu4OX7ikEeaXPKHOBB-gqg" label="changeType" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

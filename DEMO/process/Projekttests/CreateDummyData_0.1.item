@@ -152,25 +152,39 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="insert" name="insert">
-      <column comment="" key="true" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="ID_Kunde" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="Wert" nullable="false" pattern="" precision="2" sourceType="FLOAT8" type="id_Double" usefulColumn="true"/>
+    <metadata connector="FLOW" label="QUELLE_Bestellungen" name="quelleinsert">
+      <column comment="" key="false" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ID_Kunde" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8" name="Wert" nullable="false" pattern="" precision="2" sourceType="FLOAT8" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
     </metadata>
-    <metadata connector="FLOW" label="output" name="output">
-      <column comment="" key="true" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="ID_Kunde" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="Wert" nullable="false" pattern="" precision="2" sourceType="FLOAT8" type="id_Double" usefulColumn="true"/>
+    <metadata connector="FLOW" label="QUELLE_Bestellungen" name="quelleupdate">
+      <column comment="" key="false" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ID_Kunde" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="8" name="Wert" nullable="false" pattern="" precision="2" sourceType="FLOAT8" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="insert" activateCondensedTool="true" rejectInnerJoin="true">
-        <mapperTableEntries name="ID" expression="row1.ID " type="id_Integer"/>
-        <mapperTableEntries name="ID_Kunde" expression="row1.ID_Kunde " type="id_Integer"/>
-        <mapperTableEntries name="Wert" expression="row1.Wert " type="id_Double"/>
+      <outputTables sizeState="INTERMEDIATE" name="quelleinsert" activateCondensedTool="true" rejectInnerJoin="true">
+        <mapperTableEntries name="ID" expression="row1.ID" type="id_Integer"/>
+        <mapperTableEntries name="ID_Kunde" expression="row1.ID_Kunde" type="id_Integer"/>
+        <mapperTableEntries name="Wert" expression="row1.Wert" type="id_Double"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="output" activateCondensedTool="true">
+      <outputTables sizeState="INTERMEDIATE" name="quelleupdate" activateCondensedTool="true">
         <mapperTableEntries name="ID" expression="row1.ID" type="id_Integer"/>
         <mapperTableEntries name="ID_Kunde" expression="row1.ID_Kunde" type="id_Integer"/>
         <mapperTableEntries name="Wert" expression="row1.Wert" type="id_Double"/>
@@ -409,13 +423,13 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="insert" lineStyle="0" metaname="insert" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tPostgresqlOutput_1">
+  <connection connectorName="FLOW" label="quelleinsert" lineStyle="0" metaname="quelleinsert" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tPostgresqlOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="insert" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="quelleinsert" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="output" lineStyle="0" metaname="output" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tPostgresqlOutput_2">
+  <connection connectorName="FLOW" label="quelleupdate" lineStyle="0" metaname="quelleupdate" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tPostgresqlOutput_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="output" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="quelleupdate" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tPostgresqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlInput_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>

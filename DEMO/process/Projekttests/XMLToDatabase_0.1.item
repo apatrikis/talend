@@ -406,7 +406,6 @@
   </node>
   <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileDelete_1" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/app/TalendStudio/workspace/temp.csv&quot;"/>
     <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;C:/app/TalendStudio/workspace/delete_folder&quot;" show="false"/>
     <elementParameter field="TEXT" name="PATH" value="&quot;C:/app/TalendStudio/workspace/delete_folder or delete_file&quot;" show="false"/>
@@ -431,7 +430,6 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostgresqlOutputBulkExec_1" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlOutputBulkExec_1" target="tFileDelete_1">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
   </connection>
   <subjob>

@@ -254,7 +254,7 @@
       <elementValue elementRef="INPUT_COLUMN" value="Number"/>
     </elementParameter>
     <elementParameter field="TABLE" name="OPERATIONS">
-      <elementValue elementRef="OUTPUT_COLUMN" value="message"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="Number"/>
       <elementValue elementRef="FUNCTION" value="count"/>
       <elementValue elementRef="INPUT_COLUMN" value="message"/>
       <elementValue elementRef="IGNORE_NULL" value="false"/>

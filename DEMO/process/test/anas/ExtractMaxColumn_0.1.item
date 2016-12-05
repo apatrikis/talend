@@ -169,7 +169,7 @@
     <elementParameter field="TEXT" name="LABEL" value="testdata"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tPostgresqlInput_1">
-      <column comment="" key="true" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="id" nullable="false" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
   </node>
@@ -180,7 +180,7 @@
     <elementParameter field="TEXT" name="LABEL" value="ExtractMax"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1">
-      <column comment="" key="true" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="id" nullable="false" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
   </node>
@@ -208,7 +208,7 @@
     <elementParameter field="TEXT" name="LABEL" value="Log Row"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_1">
-      <column comment="" key="true" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="id" nullable="false" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
   </node>

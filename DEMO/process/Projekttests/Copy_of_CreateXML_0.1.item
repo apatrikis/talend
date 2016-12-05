@@ -112,29 +112,6 @@
     <routinesParameter id="_OmVAgLMYEea0w-yZfg-mdA" name="TalendDate"/>
     <routinesParameter id="_OmZ5ALMYEea0w-yZfg-mdA" name="TalendString"/>
   </parameters>
-  <node componentName="tPostgresqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="32">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlConnection_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_T5fyMLDGEeaViYsflqx8BQ" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.56.101&quot;"/>
-    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;postgres&quot;"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="NrE2x5vAkVTo4I4wi1Afkw=="/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="postgres"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
   <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlInput_1" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
@@ -216,10 +193,10 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="ID" type="id_Integer" outgoingConnections="//@node.2/@nodeData/@connections.2" xpath="row1/ID" nullable="false"/>
-        <nodes name="ID_Kunde" type="id_Integer" outgoingConnections="//@node.2/@nodeData/@connections.3" xpath="row1/ID_Kunde" nullable="false"/>
-        <nodes name="Wert" type="id_Double" outgoingConnections="//@node.2/@nodeData/@connections.4" xpath="row1/Wert" nullable="false"/>
-        <nodes name="Quelle" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.5" xpath="row1/Quelle" nullable="false"/>
+        <nodes name="ID" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.2" xpath="row1/ID" nullable="false"/>
+        <nodes name="ID_Kunde" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.3" xpath="row1/ID_Kunde" nullable="false"/>
+        <nodes name="Wert" type="id_Double" outgoingConnections="//@node.1/@nodeData/@connections.4" xpath="row1/Wert" nullable="false"/>
+        <nodes name="Quelle" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.5" xpath="row1/Quelle" nullable="false"/>
         <nodes name="CreatedAt" type="id_Date" xpath="row1/CreatedAt"/>
         <nodes name="ChangedAt" type="id_Date" xpath="row1/ChangedAt"/>
       </inputTrees>
@@ -227,33 +204,33 @@
         <nodes name="message" expression="" type="id_Document" xpath="copyOfcopyOfoutBestellungen/message" pattern="">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="bestellungen" type="id_String" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen" main="true">
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="bestellung" type="id_String" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung" loop="true" main="true">
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ID" expression="row1.ID" type="id_Integer" incomingConnections="//@node.2/@nodeData/@connections.2" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung/ID"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ID_Kunde" expression="row1.ID_Kunde" type="id_Integer" incomingConnections="//@node.2/@nodeData/@connections.3" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung/ID_Kunde"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Wert" expression="row1.Wert" type="id_Float" incomingConnections="//@node.2/@nodeData/@connections.4" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung/Wert"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Quelle" expression="row1.Quelle" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.5" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung/Quelle"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="messageType" expression="Var.messageType" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.0" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung/messageType"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="changeType" expression="Var.MessageType" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.1" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung/changeType"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ID" expression="row1.ID" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.2" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung/ID"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ID_Kunde" expression="row1.ID_Kunde" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.3" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung/ID_Kunde"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Wert" expression="row1.Wert" type="id_Float" incomingConnections="//@node.1/@nodeData/@connections.4" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung/Wert"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Quelle" expression="row1.Quelle" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.5" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung/Quelle"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="messageType" expression="Var.messageType" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.0" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung/messageType"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="changeType" expression="Var.MessageType" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.1" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung/changeType"/>
             </children>
           </children>
         </nodes>
       </outputTrees>
       <varTables name="Var">
-        <nodes name="messageType" expression="&quot;Bestellung&quot;" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.0"/>
-        <nodes name="MessageType" expression="&quot;test&quot;" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.1"/>
+        <nodes name="messageType" expression="&quot;Bestellung&quot;" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.0"/>
+        <nodes name="MessageType" expression="&quot;test&quot;" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.1"/>
       </varTables>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@varTables.0/@nodes.0" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.4"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@varTables.0/@nodes.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.5"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.1"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.2" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.2"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.3" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@varTables.0/@nodes.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@varTables.0/@nodes.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.5"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.2" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.3" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.3"/>
     </nodeData>
   </node>
   <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/app/TalendStudio/workspace/out.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/app/TalendStudio/workspace/temp1/out.csv&quot;"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
@@ -282,9 +259,95 @@
       <column comment="" key="false" length="-1" name="message" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tPostgresqlConnection_1" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlConnection_1" target="tPostgresqlInput_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
-  </connection>
+  <node componentName="tMomOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMomOutput_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMomConnection_1"/>
+    <elementParameter field="CHECK" name="FAILOVER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STATIC" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_PARAM_FAILOVER" value="&quot;?randomize=false&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_PARAM_STATIC" value="&quot;?transport.maxReconnectDelay=5000&amp;transport.useExponentialBackOff=false&quot;" show="false"/>
+    <elementParameter field="TABLE" name="SERVERS" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SERVER" value="WebSphere" show="false"/>
+    <elementParameter field="CHECK" name="USE_SSL" value="false" show="false"/>
+    <elementParameter field="LABEL" name="USE_SSL_NOTE" value="Notice: You should use tSetKeysore or JVM arguments to specify keystore or truststore" show="false"/>
+    <elementParameter field="TEXT" name="SERVERADDRESS" value="&quot;localhost&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERVERPORT" value="&quot;1414&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="TO" value="&quot;Bestellungen&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="MSGTYPE" value="Queue"/>
+    <elementParameter field="TEXT" name="CHANNEL" value="&quot;DC.SVRCONN&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="MESSAGE_BODY_TYPE" value="Text"/>
+    <elementParameter field="CHECK" name="IS_TRANSACTED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="QM" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUEUE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="IS_USE_MESSAGE_ID" value="false"/>
+    <elementParameter field="TABLE" name="ADDITIONAL_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="USE_FORMAT" value="false" show="false"/>
+    <elementParameter field="TEXT" name="WS_MQ_FORMAT" value="&quot;MQSTR&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DELIVERY_MODE" value="N_PERSISTENT"/>
+    <elementParameter field="CLOSED_LIST" name="ACKNOWLEDGMENT_MODE" value="AUTO_ACKNOWLEDGE" show="false"/>
+    <elementParameter field="CHECK" name="SET_JMS_HEADER" value="false"/>
+    <elementParameter field="TABLE" name="JMS_HEADERS" show="false"/>
+    <elementParameter field="CHECK" name="SET_JMS_PROPERTIES" value="false"/>
+    <elementParameter field="TABLE" name="JMS_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="SET_MQMD_FIELDS" value="false" show="false"/>
+    <elementParameter field="TABLE" name="MQMD_FIELDS" show="false"/>
+    <elementParameter field="CHECK" name="USE_MQ_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIX_MQRFH2" value="false" show="false"/>
+    <elementParameter field="TABLE" name="MQRFH2_FIXED_FIELD" show="false"/>
+    <elementParameter field="CHECK" name="USE_MQRFH2_MCD" value="false" show="false"/>
+    <elementParameter field="TABLE" name="MQRFH2_MCD_FIELD" show="false"/>
+    <elementParameter field="CHECK" name="USE_MQRFH2_JMS" value="false" show="false"/>
+    <elementParameter field="TABLE" name="MQRFH2_JMS_FIELD" show="false"/>
+    <elementParameter field="CHECK" name="USE_MQRFH2_USR" value="false" show="false"/>
+    <elementParameter field="TABLE" name="MQRFH2_USR_FIELD" show="false"/>
+    <elementParameter field="CHECK" name="SET_MQ_SSL_CIPHER" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="MQ_SSL_CIPHER" value="SSL_RSA_WITH_NULL_MD5" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMomOutput_1">
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMomConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMomConnection_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SERVER" value="ActiveMQ"/>
+    <elementParameter field="CHECK" name="USE_SSL" value="false"/>
+    <elementParameter field="LABEL" name="USE_SSL_NOTE" value="Notice: You should use tSetKeysore or JVM arguments to specify keystore or truststore" show="false"/>
+    <elementParameter field="CHECK" name="FAILOVER" value="false"/>
+    <elementParameter field="CHECK" name="STATIC" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_PARAM_FAILOVER" value="&quot;?randomize=false&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_PARAM_STATIC" value="&quot;?transport.maxReconnectDelay=5000&amp;transport.useExponentialBackOff=false&quot;" show="false"/>
+    <elementParameter field="TABLE" name="SERVERS" show="false"/>
+    <elementParameter field="TEXT" name="SERVERADDRESS" value="&quot;192.168.56.101&quot;"/>
+    <elementParameter field="TEXT" name="SERVERPORT" value="&quot;61616&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;admin&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="XOWw2jdQq/4="/>
+    <elementParameter field="TEXT" name="CHANNEL" value="&quot;DC.SVRCONN&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QM" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="IS_TRANSACTED" value="false"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACKNOWLEDGMENT_MODE" value="AUTO_ACKNOWLEDGE" show="false"/>
+    <elementParameter field="TABLE" name="ADDITIONAL_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="SET_MQ_SSL_CIPHER" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="MQ_SSL_CIPHER" value="SSL_RSA_WITH_NULL_MD5" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Active MQ Connection"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileDelete_1" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/app/TalendStudio/workspace/in.csv&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;C:/app/TalendStudio/workspace/temp1&quot;"/>
+    <elementParameter field="TEXT" name="PATH" value="&quot;C:/app/TalendStudio/workspace/delete_folder or delete_file&quot;" show="false"/>
+    <elementParameter field="CHECK" name="FAILON" value="true"/>
+    <elementParameter field="CHECK" name="FOLDER" value="true"/>
+    <elementParameter field="CHECK" name="FOLDER_FILE" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note &quot;CURRENT_STATUS&quot; including:&#xA;&quot;File (or path) deleted.&quot;&#xA;&quot;No file (or path) deleted.&quot;&#xA;&quot;File (or path) does not exist or is invalid.&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileDelete_1"/>
+  </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tPostgresqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlInput_1" target="tXMLMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
@@ -293,13 +356,25 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfcopyOfoutBestellungen" show="false"/>
   </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFileOutputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileOutputDelimited_1" target="tMomOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tMomOutput_1" offsetLabelX="0" offsetLabelY="0" source="tMomOutput_1" target="tFileDelete_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlConnection_1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlInput_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlInput_1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMomConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileDelete_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>

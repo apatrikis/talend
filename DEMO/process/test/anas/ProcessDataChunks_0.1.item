@@ -247,9 +247,9 @@
       <column comment="" key="false" length="20" name="name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="out1">
+      <outputTables sizeState="INTERMEDIATE" name="out1" activateCondensedTool="true">
         <mapperTableEntries name="id" expression="out.id " type="id_Integer"/>
         <mapperTableEntries name="name" expression="out.name " type="id_String" nullable="true"/>
       </outputTables>
@@ -258,7 +258,7 @@
         <mapperTableEntries name="name" type="id_String" nullable="true"/>
         <mapperTableEntries name="pack" type="id_Integer" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row2" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="pack" expression="out.pack " type="id_Integer" nullable="true" operator="="/>
       </inputTables>
     </nodeData>

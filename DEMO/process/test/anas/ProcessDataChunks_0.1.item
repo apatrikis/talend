@@ -209,7 +209,7 @@
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
     <elementParameter field="TABLE" name="VALUES">
       <elementValue elementRef="SCHEMA_COLUMN" value="pack"/>
-      <elementValue elementRef="VALUE" value="globalMap.get(&quot;tForeach_1_CURRENT_VALUE&quot;)+&quot;_out&quot;)"/>
+      <elementValue elementRef="VALUE" value="globalMap.get(&quot;tForeach_1_CURRENT_VALUE&quot;)"/>
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
     <elementParameter field="TABLE" name="INTABLE" show="false"/>

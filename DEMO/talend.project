@@ -7,6 +7,9 @@
     <documentationStatus xmi:id="_8gFDIKN8EeaTP9NNc_eyRQ" label="unchecked" code="UCK"/>
     <documentationStatus xmi:id="_8gFDIaN8EeaTP9NNc_eyRQ" label="checked" code="CHK"/>
     <documentationStatus xmi:id="_8gFDIqN8EeaTP9NNc_eyRQ" label="validated" code="VAL"/>
+    <componentsSettings xmi:id="_wG-20LrmEeaHHO0kxzLENQ" name="DI|tHashInput" family="Technical"/>
+    <componentsSettings xmi:id="_wcVbwLrmEeaHHO0kxzLENQ" name="DI|tHashOutput" family="Technical"/>
+    <componentsSettings xmi:id="_1E0CwLrmEeaHHO0kxzLENQ" name="SPARKSTREAMING|tAvroMap" family="Processing"/>
     <statAndLogsSettings xmi:id="_Vm2BsKscEeaYT93ZZIoWgg">
       <parameters xmi:id="_Vm2BsascEeaYT93ZZIoWgg">
         <elementParameter xmi:id="_KgOFULh_EeaXPKHOBB-gqg" field="CHECK" name="UPDATE_COMPONENTS" value="false" contextMode="false"/>

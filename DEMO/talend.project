@@ -964,6 +964,8 @@
       <relatedItems xmi:id="_R31o0bijEeaXPKHOBB-gqg" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_R31o0rijEeaXPKHOBB-gqg" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_R31o07ijEeaXPKHOBB-gqg" id="_T5fyMLDGEeaViYsflqx8BQ - NKDBestellungen" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_srNCwLsCEeaHHO0kxzLENQ" id="_cu0j8LikEeaXPKHOBB-gqg" version="Latest" type="property"/>
+      <relatedItems xmi:id="_srNCwbsCEeaHHO0kxzLENQ" id="_cu0j8LikEeaXPKHOBB-gqg - metadata" version="Latest" type="schema"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_zXeg8LimEeaXPKHOBB-gqg">
       <baseItem xmi:id="_zXeg8bimEeaXPKHOBB-gqg" id="_Dc4TsLimEeaXPKHOBB-gqg" version="0.1" type="job"/>

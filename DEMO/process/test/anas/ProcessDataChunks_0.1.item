@@ -208,6 +208,10 @@
     <elementParameter field="TABLE" name="GROUPBYS">
       <elementValue elementRef="OUTPUT_COLUMN" value="sequence"/>
       <elementValue elementRef="INPUT_COLUMN" value="sequence"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="id"/>
+      <elementValue elementRef="INPUT_COLUMN" value="id"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="name"/>
+      <elementValue elementRef="INPUT_COLUMN" value="name"/>
     </elementParameter>
     <elementParameter field="TABLE" name="OPERATIONS"/>
     <elementParameter field="TEXT" name="LIST_DELIMITER" value="&quot;,&quot;"/>

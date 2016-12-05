@@ -195,7 +195,7 @@
       <outputTables sizeState="INTERMEDIATE" name="out">
         <mapperTableEntries name="id" expression="row1.id" type="id_Integer"/>
         <mapperTableEntries name="name" expression="row1.name" type="id_String" nullable="true"/>
-        <mapperTableEntries name="sequence" expression="Numeric.sequence(&quot;import&quot;,0,1)" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="sequence" expression="Numeric.sequence(&quot;import&quot;,1,1) % 75" type="id_Integer" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="id" type="id_Integer"/>

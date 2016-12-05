@@ -224,7 +224,7 @@
         <nodes name="CreatedAt" type="id_Date" xpath="row1/CreatedAt"/>
         <nodes name="ChangedAt" type="id_Date" xpath="row1/ChangedAt"/>
       </inputTrees>
-      <outputTrees activateCondensedTool="true" name="copyOfcopyOfoutBestellungen" allInOne="true" enableEmptyElement="false">
+      <outputTrees activateCondensedTool="true" name="copyOfcopyOfoutBestellungen" enableEmptyElement="false">
         <nodes name="message" expression="" type="id_Document" xpath="copyOfcopyOfoutBestellungen/message" pattern="">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="bestellungen" type="id_String" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen" main="true">
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="bestellung" type="id_String" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung" loop="true" main="true">

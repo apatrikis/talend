@@ -231,7 +231,7 @@
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/app/TalendStudio/workspace/temp1/out.xml&quot;"/>
     <elementParameter field="CHECK" name="INPUT_IS_DOCUMENT" value="false"/>
     <elementParameter field="COLUMN_LIST" name="DOCUMENT_COL" value="message" show="false"/>
-    <elementParameter field="TEXT" name="ROW_TAG" value=""/>
+    <elementParameter field="TEXT" name="ROW_TAG" value="&quot;row&quot;"/>
     <elementParameter field="CHECK" name="SPLIT" value="true"/>
     <elementParameter field="TEXT" name="SPLIT_EVERY" value="10000"/>
     <elementParameter field="CHECK" name="CREATE" value="true"/>

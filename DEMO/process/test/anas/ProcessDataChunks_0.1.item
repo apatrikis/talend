@@ -190,7 +190,7 @@
       <column comment="" key="false" length="-1" name="pack" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out">
         <mapperTableEntries name="id" expression="row1.id" type="id_Integer"/>
@@ -209,7 +209,7 @@
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
     <elementParameter field="TABLE" name="VALUES">
       <elementValue elementRef="SCHEMA_COLUMN" value="pack"/>
-      <elementValue elementRef="VALUE" value="globalMap.get(&quot;tForeach_1_CURRENT_VALUE&quot;)"/>
+      <elementValue elementRef="VALUE" value="Mathematical.INT((String)globalMap.get(&quot;tForeach_1_CURRENT_VALUE&quot;))"/>
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
     <elementParameter field="TABLE" name="INTABLE" show="false"/>
@@ -225,9 +225,9 @@
   <node componentName="tForeach" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tForeach_1" show="false"/>
     <elementParameter field="TABLE" name="VALUES">
-      <elementValue elementRef="VALUE" value="1"/>
-      <elementValue elementRef="VALUE" value="2"/>
-      <elementValue elementRef="VALUE" value="3"/>
+      <elementValue elementRef="VALUE" value="&quot;1&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;2&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;3&quot;"/>
     </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
@@ -247,7 +247,7 @@
       <column comment="" key="false" length="20" name="name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="id" expression="out.id " type="id_Integer"/>

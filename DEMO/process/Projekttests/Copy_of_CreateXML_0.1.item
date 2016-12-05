@@ -243,23 +243,29 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="outBestellungen" name="copyOfcopyOfoutBestellungen">
       <column comment="" key="false" length="-1" name="message" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row2" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="ID" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.2" xpath="row2/ID" nullable="false"/>
+        <nodes name="ID_Kunde" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.3" xpath="row2/ID_Kunde" nullable="false"/>
+        <nodes name="Wert" type="id_Double" outgoingConnections="//@node.3/@nodeData/@connections.4" xpath="row2/Wert" nullable="false"/>
+        <nodes name="Quelle" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.5" xpath="row2/Quelle" nullable="false"/>
+        <nodes name="CreatedAt" type="id_Date" xpath="row2/CreatedAt"/>
+        <nodes name="ChangedAt" type="id_Date" xpath="row2/ChangedAt"/>
+      </inputTrees>
       <outputTrees activateCondensedTool="true" name="copyOfcopyOfoutBestellungen" enableEmptyElement="false">
         <nodes name="message" expression="" type="id_Document" xpath="copyOfcopyOfoutBestellungen/message" pattern="">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="bestellungen" type="id_String" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen" main="true">
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="bestellung" type="id_String" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung" loop="true" main="true">
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ID" expression="row1.ID" type="id_Integer" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung/ID"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ID_Kunde" expression="row1.ID_Kunde" type="id_Integer" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung/ID_Kunde"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Wert" expression="row1.Wert" type="id_Float" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung/Wert"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Quelle" expression="row1.Quelle" type="id_String" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung/Quelle"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ID" expression="row2.ID" type="id_Integer" incomingConnections="//@node.3/@nodeData/@connections.2" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung/ID"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ID_Kunde" expression="row2.ID_Kunde" type="id_Integer" incomingConnections="//@node.3/@nodeData/@connections.3" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung/ID_Kunde"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Wert" expression="row2.Wert" type="id_Float" incomingConnections="//@node.3/@nodeData/@connections.4" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung/Wert"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Quelle" expression="row2.Quelle" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.5" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung/Quelle"/>
               <children xsi:type="TalendXMLMap:OutputTreeNode" name="messageType" expression="Var.messageType" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.0" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung/messageType"/>
               <children xsi:type="TalendXMLMap:OutputTreeNode" name="changeType" expression="Var.MessageType" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.1" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung/changeType"/>
             </children>
           </children>
         </nodes>
-        <nodes name="Number" expression="Numeric.sequence(&quot;s1&quot;,1,1) %100" type="id_Integer" xpath="copyOfcopyOfoutBestellungen/Number" pattern=""/>
       </outputTrees>
       <varTables name="Var">
         <nodes name="messageType" expression="&quot;Bestellung&quot;" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.0"/>
@@ -267,6 +273,10 @@
       </varTables>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@varTables.0/@nodes.0" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.4"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@varTables.0/@nodes.1" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.5"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.1" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.2" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.3" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.3"/>
     </nodeData>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="320">

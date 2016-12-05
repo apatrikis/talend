@@ -175,7 +175,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="if (row1.id > ((Integer)globalMap.get(&quot;last&quot;))) {&#xA;  globalMap.put(&quot;last&quot;, row1.id)&#xA;}"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="ExtractMax"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>

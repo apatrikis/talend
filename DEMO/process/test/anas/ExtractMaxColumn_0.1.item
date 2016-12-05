@@ -175,6 +175,7 @@
   </node>
   <node componentName="tReplicate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tReplicate_1" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Duplicate"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tReplicate_1">
       <column comment="" key="true" length="-1" name="id" nullable="false" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
@@ -234,7 +235,7 @@
       <elementValue elementRef="KEY" value="&quot;last&quot;"/>
       <elementValue elementRef="VALUE" value="row8.id"/>
     </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="Set New Last ID"/>
+    <elementParameter field="TEXT" name="LABEL" value="Save New Last ID"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSetGlobalVar_2">
       <column comment="" key="true" length="-1" name="id" nullable="false" pattern="" precision="-1" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>

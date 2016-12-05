@@ -188,7 +188,7 @@
     <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="Datenbank zu XML"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="outBestellungen" name="copyOfcopyOfoutBestellungen">
+    <metadata connector="FLOW" label="outBestellungen" name="Bestellungen">
       <column comment="" key="false" length="-1" name="message" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
@@ -200,16 +200,16 @@
         <nodes name="CreatedAt" type="id_Date" xpath="row1/CreatedAt"/>
         <nodes name="ChangedAt" type="id_Date" xpath="row1/ChangedAt"/>
       </inputTrees>
-      <outputTrees activateCondensedTool="true" name="copyOfcopyOfoutBestellungen" enableEmptyElement="false">
-        <nodes name="message" expression="" type="id_Document" xpath="copyOfcopyOfoutBestellungen/message" pattern="">
-          <children xsi:type="TalendXMLMap:OutputTreeNode" name="bestellungen" type="id_String" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen" main="true">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="bestellung" type="id_String" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung" loop="true" main="true">
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ID" expression="row1.ID" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.2" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung/ID"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ID_Kunde" expression="row1.ID_Kunde" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.3" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung/ID_Kunde"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Wert" expression="row1.Wert" type="id_Float" incomingConnections="//@node.1/@nodeData/@connections.4" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung/Wert"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Quelle" expression="row1.Quelle" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.5" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung/Quelle"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="messageType" expression="Var.messageType" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.0" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung/messageType"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="changeType" expression="Var.MessageType" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.1" xpath="copyOfcopyOfoutBestellungen.message:/bestellungen/bestellung/changeType"/>
+      <outputTrees activateCondensedTool="true" name="Bestellungen" enableEmptyElement="false">
+        <nodes name="message" expression="" type="id_Document" xpath="Bestellungen/message" pattern="">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="bestellungen" type="id_String" xpath="Bestellungen.message:/bestellungen" main="true">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="bestellung" type="id_String" xpath="Bestellungen.message:/bestellungen/bestellung" loop="true" main="true">
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ID" expression="row1.ID" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.2" xpath="Bestellungen.message:/bestellungen/bestellung/ID"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ID_Kunde" expression="row1.ID_Kunde" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.3" xpath="Bestellungen.message:/bestellungen/bestellung/ID_Kunde"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Wert" expression="row1.Wert" type="id_Float" incomingConnections="//@node.1/@nodeData/@connections.4" xpath="Bestellungen.message:/bestellungen/bestellung/Wert"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Quelle" expression="row1.Quelle" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.5" xpath="Bestellungen.message:/bestellungen/bestellung/Quelle"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="messageType" expression="Var.messageType" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.0" xpath="Bestellungen.message:/bestellungen/bestellung/messageType"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="changeType" expression="Var.MessageType" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.1" xpath="Bestellungen.message:/bestellungen/bestellung/changeType"/>
             </children>
           </children>
         </nodes>
@@ -226,9 +226,9 @@
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.3" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.3"/>
     </nodeData>
   </node>
-  <node componentName="tFileOutputXML" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="320">
+  <node componentName="tFileOutputXML" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputXML_1" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/app/TalendStudio/workspace/out.xml&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/app/TalendStudio/workspace/temp1/out.xml&quot;"/>
     <elementParameter field="CHECK" name="INPUT_IS_DOCUMENT" value="false"/>
     <elementParameter field="COLUMN_LIST" name="DOCUMENT_COL" value="message" show="false"/>
     <elementParameter field="TEXT" name="ROW_TAG" value="&quot;row&quot;"/>
@@ -375,9 +375,9 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tPostgresqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlInput_1" target="tFileList_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="copyOfcopyOfoutBestellungen" lineStyle="0" metaname="copyOfcopyOfoutBestellungen" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tFileOutputXML_1">
+  <connection connectorName="FLOW" label="Bestellungen" lineStyle="0" metaname="Bestellungen" offsetLabelX="50" offsetLabelY="-21" source="tXMLMap_1" target="tFileOutputXML_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfcopyOfoutBestellungen" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Bestellungen" show="false"/>
   </connection>
   <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tIterateToFlow_1">
     <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>

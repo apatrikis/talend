@@ -237,7 +237,7 @@
             </children>
           </children>
         </nodes>
-        <nodes name="Number" expression="Numeric.sequence(&quot;s1&quot;,1,1) " type="id_Integer" xpath="copyOfcopyOfoutBestellungen/Number" pattern=""/>
+        <nodes name="Number" expression="Numeric.sequence(&quot;s1&quot;,1,1) %100" type="id_Integer" xpath="copyOfcopyOfoutBestellungen/Number" pattern=""/>
       </outputTrees>
       <varTables name="Var">
         <nodes name="messageType" expression="&quot;Bestellung&quot;" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.0"/>

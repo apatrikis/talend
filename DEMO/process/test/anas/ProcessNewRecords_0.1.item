@@ -222,7 +222,7 @@
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="up">
         <mapperTableEntries name="id" expression="row2.id " type="id_Integer"/>
-        <mapperTableEntries name="processed" expression="'j'" type="id_String" nullable="true"/>
+        <mapperTableEntries name="processed" expression="&quot;j&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="id" type="id_Integer"/>

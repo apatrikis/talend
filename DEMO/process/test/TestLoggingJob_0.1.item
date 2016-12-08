@@ -139,9 +139,776 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tWarn_3"/>
   </node>
+  <node componentName="tStatCatcher" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tStatCatcher_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Whd0AL09EeaGoupfsQVfOg - amcstatdata" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="amcstatdata" name="tStatCatcher_1">
+      <column comment="" key="false" length="29" name="moment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="20" name="pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="20" name="father_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="20" name="root_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="system_pid" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="50" name="project" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="50" name="job" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="job_repository_id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="job_version" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="50" name="context" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="origin" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="message_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="duration" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlOutput_3" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Whd0AL09EeaGoupfsQVfOg" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.56.101&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;amc&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="7s6v49ZcklfgvLhdBCEhjQ=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;amcstatdata&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" value="_Whd0AL09EeaGoupfsQVfOg - amcstatdata" show="false"/>
+    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SPATIAL_INDEX" value="false" show="false"/>
+    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" value="false" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="moment"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pid"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="father_pid"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="root_pid"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="system_pid"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="project"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="job"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="job_repository_id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="job_version"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="context"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="origin"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="message_type"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="message"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="duration"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="amcstatdata" name="tPostgresqlOutput_3">
+      <column comment="" key="false" length="29" name="moment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="20" name="pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="20" name="father_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="20" name="root_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="system_pid" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="50" name="project" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="50" name="job" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="job_repository_id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="job_version" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="50" name="context" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="origin" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="message_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="duration" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="REJECT" label="amcstatdata" name="REJECT">
+      <column comment="" key="false" length="29" name="moment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="20" name="pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="20" name="father_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="20" name="root_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="system_pid" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="50" name="project" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="50" name="job" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="job_repository_id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="job_version" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="50" name="context" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="origin" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="message_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="duration" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Whd0AL09EeaGoupfsQVfOg - amclogdata" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_JAVA_EXCEPTION" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TWARN" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TACTIONFAILURE" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="amclogdata" name="tLogCatcher_1">
+      <column comment="" key="false" length="29" name="moment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="20" name="pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="20" name="root_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="20" name="father_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="50" name="project" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="job" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="50" name="context" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="priority" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="origin" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="code" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlOutput_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Whd0AL09EeaGoupfsQVfOg" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.56.101&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;amc&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="7s6v49ZcklfgvLhdBCEhjQ=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;amclogdata&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" value="_Whd0AL09EeaGoupfsQVfOg - amclogdata" show="false"/>
+    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SPATIAL_INDEX" value="false" show="false"/>
+    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" value="false" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="moment"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pid"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="root_pid"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="father_pid"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="project"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="job"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="context"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="priority"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="origin"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="message"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="code"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="amclogdata" name="tPostgresqlOutput_2">
+      <column comment="" key="false" length="29" name="moment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="20" name="pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="20" name="root_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="20" name="father_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="50" name="project" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="job" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="50" name="context" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="priority" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="origin" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="code" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="REJECT" label="amclogdata" name="REJECT">
+      <column comment="" key="false" length="29" name="moment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="20" name="pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="20" name="root_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="20" name="father_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="50" name="project" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="job" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="50" name="context" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="priority" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="origin" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="code" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tFlowMeterCatcher" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowMeterCatcher_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Whd0AL09EeaGoupfsQVfOg - amcflowmeterdata" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="amcflowmeterdata" name="tFlowMeterCatcher_1">
+      <column comment="" key="false" length="29" name="moment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="20" name="pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="20" name="father_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="20" name="root_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="system_pid" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="50" name="project" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="50" name="job" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="job_repository_id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="job_version" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="50" name="context" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="origin" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="label" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="count" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="reference" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="thresholds" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlOutput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Whd0AL09EeaGoupfsQVfOg" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.56.101&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;amc&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="7s6v49ZcklfgvLhdBCEhjQ=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;amcflowmeterdata&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" value="_Whd0AL09EeaGoupfsQVfOg - amcflowmeterdata" show="false"/>
+    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SPATIAL_INDEX" value="false" show="false"/>
+    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" value="false" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="moment"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pid"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="father_pid"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="root_pid"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="system_pid"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="project"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="job"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="job_repository_id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="job_version"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="context"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="origin"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="label"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="count"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reference"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="thresholds"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="amcflowmeterdata" name="tPostgresqlOutput_1">
+      <column comment="" key="false" length="29" name="moment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="20" name="pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="20" name="father_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="20" name="root_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="system_pid" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="50" name="project" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="50" name="job" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="job_repository_id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="job_version" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="50" name="context" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="origin" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="label" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="count" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="reference" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="thresholds" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="REJECT" label="amcflowmeterdata" name="REJECT">
+      <column comment="" key="false" length="29" name="moment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="20" name="pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="20" name="father_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="20" name="root_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="system_pid" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="50" name="project" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="50" name="job" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="job_repository_id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="job_version" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="50" name="context" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="origin" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="label" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="count" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="reference" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'NULL::character varying'" key="false" length="255" name="thresholds" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tRouteInput_1" offsetLabelX="0" offsetLabelY="0" source="tRouteInput_1" target="tWarn_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tStatCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tStatCatcher_1" target="tPostgresqlOutput_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tPostgresqlOutput_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tFlowMeterCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tFlowMeterCatcher_1" target="tPostgresqlOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="CHECK" name="COLLAPSED" value="true" show="false"/>
@@ -151,6 +918,21 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tStatCatcher_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowMeterCatcher_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>

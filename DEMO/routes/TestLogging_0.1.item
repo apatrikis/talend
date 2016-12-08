@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_4rrQAL08EeaGoupfsQVfOg" defaultContext="Default" jobType="Standard">
-  <context xmi:id="_4rrQAb08EeaGoupfsQVfOg" confirmationNeeded="false" name="Default"/>
-  <parameters xmi:id="_4rrQAr08EeaGoupfsQVfOg">
-    <elementParameter xmi:id="_4rrQA708EeaGoupfsQVfOg" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
-    <elementParameter xmi:id="_4rrQBL08EeaGoupfsQVfOg" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
-    <elementParameter xmi:id="_4rrQBb08EeaGoupfsQVfOg" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
-    <elementParameter xmi:id="_4rrQBr08EeaGoupfsQVfOg" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
-    <elementParameter xmi:id="_4rrQB708EeaGoupfsQVfOg" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
-    <elementParameter xmi:id="_4rrQCL08EeaGoupfsQVfOg" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
-    <elementParameter xmi:id="_4rrQCb08EeaGoupfsQVfOg" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
-    <elementParameter xmi:id="_4rrQCr08EeaGoupfsQVfOg" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
-    <elementParameter xmi:id="_4rrQC708EeaGoupfsQVfOg" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
-    <elementParameter xmi:id="_4rrQDL08EeaGoupfsQVfOg" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
-    <elementParameter xmi:id="_4rrQDb08EeaGoupfsQVfOg" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
-    <elementParameter xmi:id="_4rrQDr08EeaGoupfsQVfOg" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
-    <elementParameter xmi:id="_4rrQD708EeaGoupfsQVfOg" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
-    <elementParameter xmi:id="_4rrQEL08EeaGoupfsQVfOg" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
-    <elementParameter xmi:id="_4rrQEb08EeaGoupfsQVfOg" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_LIfUIL0-EeaGoupfsQVfOg" defaultContext="Default" jobType="Standard">
+  <context xmi:id="_LIfUIb0-EeaGoupfsQVfOg" confirmationNeeded="false" name="Default"/>
+  <parameters xmi:id="_LIfUIr0-EeaGoupfsQVfOg">
+    <elementParameter xmi:id="_LIfUI70-EeaGoupfsQVfOg" field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter xmi:id="_LIfUJL0-EeaGoupfsQVfOg" field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter xmi:id="_LIfUJb0-EeaGoupfsQVfOg" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_LIfUJr0-EeaGoupfsQVfOg" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_LIfUJ70-EeaGoupfsQVfOg" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_LIfUKL0-EeaGoupfsQVfOg" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_LIfUKb0-EeaGoupfsQVfOg" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_LIfUKr0-EeaGoupfsQVfOg" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_LIf7ML0-EeaGoupfsQVfOg" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_LIf7Mb0-EeaGoupfsQVfOg" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_LIf7Mr0-EeaGoupfsQVfOg" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_LIf7M70-EeaGoupfsQVfOg" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_LIf7NL0-EeaGoupfsQVfOg" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_LIf7Nb0-EeaGoupfsQVfOg" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_LIf7Nr0-EeaGoupfsQVfOg" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_LIf7N70-EeaGoupfsQVfOg" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_LIf7OL0-EeaGoupfsQVfOg" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
     <routinesParameter xmi:id="_4o5Bwr08EeaGoupfsQVfOg" id="_OlmnwLMYEea0w-yZfg-mdA" name="DQTechnical"/>
     <routinesParameter xmi:id="_4o5Bw708EeaGoupfsQVfOg" id="_OlMYELMYEea0w-yZfg-mdA" name="DataMasking"/>
     <routinesParameter xmi:id="_4o5BxL08EeaGoupfsQVfOg" id="_Oly1ALMYEea0w-yZfg-mdA" name="DataOperation"/>
@@ -33,4 +35,48 @@
     <routinesParameter xmi:id="_4o5Bz708EeaGoupfsQVfOg" id="_OmVAgLMYEea0w-yZfg-mdA" name="TalendDate"/>
     <routinesParameter xmi:id="_4o5B0L08EeaGoupfsQVfOg" id="_OmZ5ALMYEea0w-yZfg-mdA" name="TalendString"/>
   </parameters>
+  <node xmi:id="_LIf7Ob0-EeaGoupfsQVfOg" componentName="cTimer" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="128">
+    <elementParameter xmi:id="_LIf7Or0-EeaGoupfsQVfOg" field="TEXT" name="UNIQUE_NAME" value="cTimer_1" show="false"/>
+    <elementParameter xmi:id="_LIf7O70-EeaGoupfsQVfOg" field="TEXT" name="PERIOD" value="1000"/>
+    <elementParameter xmi:id="_LIf7PL0-EeaGoupfsQVfOg" field="TEXT" name="REPEATCOUNT" value="10"/>
+    <elementParameter xmi:id="_LIf7Pb0-EeaGoupfsQVfOg" field="TEXT" name="DELAY" value="1000"/>
+    <elementParameter xmi:id="_LIf7Pr0-EeaGoupfsQVfOg" field="CHECK" name="FIXEDRATE" value="false"/>
+    <elementParameter xmi:id="_LIf7P70-EeaGoupfsQVfOg" field="CHECK" name="DAEMON" value="true"/>
+    <elementParameter xmi:id="_LIf7QL0-EeaGoupfsQVfOg" field="CHECK" name="SET_TIME" value="false"/>
+    <elementParameter xmi:id="_LIf7Qb0-EeaGoupfsQVfOg" field="TEXT" name="TIME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_LIf7Qr0-EeaGoupfsQVfOg" field="LABEL" name="NOTE" value="(yyyy-MM-dd HH:mm:ss | yyyy-MM-dd'T'HH:mm:ss)" show="false"/>
+    <elementParameter xmi:id="_LIf7Q70-EeaGoupfsQVfOg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_LIf7RL0-EeaGoupfsQVfOg" componentName="cTalendJob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="128">
+    <elementParameter xmi:id="_LIf7Rb0-EeaGoupfsQVfOg" field="TEXT" name="UNIQUE_NAME" value="cTalendJob_1" show="false"/>
+    <elementParameter xmi:id="_LIf7Rr0-EeaGoupfsQVfOg" field="RADIO" name="FROM_REPOSITORY_JOB" value="true"/>
+    <elementParameter xmi:id="_LIf7R70-EeaGoupfsQVfOg" field="RADIO" name="FROM_EXTERNAL_JAR" value="false"/>
+    <elementParameter xmi:id="_LIf7SL0-EeaGoupfsQVfOg" field="RADIO" name="USE_SELECTED_CONTEXT" value="true"/>
+    <elementParameter xmi:id="_LIf7Sb0-EeaGoupfsQVfOg" field="RADIO" name="USE_ROUTE_CONTEXT" value="false"/>
+    <elementParameter xmi:id="_LIf7Sr0-EeaGoupfsQVfOg" field="RADIO" name="USE_JOB_CONTEXT" value="false"/>
+    <elementParameter xmi:id="_LIf7S70-EeaGoupfsQVfOg" field="ROUTE_INPUT_PROCESS_TYPE" name="SELECTED_JOB_NAME" value="TestLoggingJob"/>
+    <elementParameter xmi:id="_LIf7TL0-EeaGoupfsQVfOg" field="TECHNICAL" name="SELECTED_JOB_NAME:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter xmi:id="_LIf7Tb0-EeaGoupfsQVfOg" field="TECHNICAL" name="SELECTED_JOB_NAME:PROCESS_TYPE_PROCESS" value="__5ndYL08EeaGoupfsQVfOg"/>
+    <elementParameter xmi:id="_LIf7Tr0-EeaGoupfsQVfOg" field="TECHNICAL" name="SELECTED_JOB_NAME:PROCESS_TYPE_VERSION" value="0.1"/>
+    <elementParameter xmi:id="_LIf7T70-EeaGoupfsQVfOg" field="MODULE_LIST" name="LIBRARY" value="" show="false"/>
+    <elementParameter xmi:id="_LIf7UL0-EeaGoupfsQVfOg" field="TEXT" name="JOB" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_LIf7Ub0-EeaGoupfsQVfOg" field="TEXT" name="CONTEXT" value="&quot;Default&quot;" show="false"/>
+    <elementParameter xmi:id="_LIf7Ur0-EeaGoupfsQVfOg" field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter xmi:id="_LIf7U70-EeaGoupfsQVfOg" field="TABLE" name="EXTERNAL_JAR_CONTEXTPARAMS" show="false"/>
+    <elementParameter xmi:id="_LIf7VL0-EeaGoupfsQVfOg" field="CHECK" name="PROPAGATE_HEADER" value="false"/>
+    <elementParameter xmi:id="_LIf7Vb0-EeaGoupfsQVfOg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <connection xmi:id="_LIf7Vr0-EeaGoupfsQVfOg" connectorName="ROUTE" label="route1" lineStyle="14" metaname="cTimer_1" offsetLabelX="0" offsetLabelY="0" source="cTimer_1" target="cTalendJob_1">
+    <elementParameter xmi:id="_LIf7V70-EeaGoupfsQVfOg" field="TEXT" name="UNIQUE_NAME" value="route1" show="false"/>
+  </connection>
+  <subjob xmi:id="_LIf7WL0-EeaGoupfsQVfOg">
+    <elementParameter xmi:id="_LIf7Wb0-EeaGoupfsQVfOg" field="TEXT" name="UNIQUE_NAME" value="cTimer_1" show="false"/>
+    <elementParameter xmi:id="_LIf7Wr0-EeaGoupfsQVfOg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_LIf7W70-EeaGoupfsQVfOg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_LIf7XL0-EeaGoupfsQVfOg">
+    <elementParameter xmi:id="_LIf7Xb0-EeaGoupfsQVfOg" field="TEXT" name="UNIQUE_NAME" value="cTalendJob_1" show="false"/>
+    <elementParameter xmi:id="_LIf7Xr0-EeaGoupfsQVfOg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_LIf7X70-EeaGoupfsQVfOg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
 </talendfile:ProcessType>

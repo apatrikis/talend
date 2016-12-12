@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_RQsSIMBXEeaCUeTvQw8ESA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_RQsSIcBXEeaCUeTvQw8ESA" comment="" name="cleansed_file" prompt="cleansed_file?" promptNeeded="false" type="id_String" value="&quot;/tmp/cleansed_file.xls&quot;"/>
+  <contextParameter xmi:id="_RQsSIsBXEeaCUeTvQw8ESA" comment="" name="customer_merged" prompt="customer_merged?" promptNeeded="false" type="id_String" value="&quot;/tmp/merged_customers.xls&quot;"/>
+  <contextParameter xmi:id="_RQsSI8BXEeaCUeTvQw8ESA" comment="" name="input_file" prompt="input_file?" promptNeeded="false" type="id_String" value="&quot;/tmp/customers.xls&quot;"/>
+  <contextParameter xmi:id="_RQsSJMBXEeaCUeTvQw8ESA" comment="" name="dsc_tag" prompt="dsc_tag?" promptNeeded="false" type="id_String" value="Talend Dedupe Demo"/>
+</talendfile:ContextType>

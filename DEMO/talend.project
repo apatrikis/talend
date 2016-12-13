@@ -514,6 +514,12 @@
       <relatedItems xmi:id="_Vs1VBascEeaYT93ZZIoWgg" id="TalendDataGenerator" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Vs1VBqscEeaYT93ZZIoWgg" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Vs1VB6scEeaYT93ZZIoWgg" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_RSDb0MFOEeaFzdpYtpM7Ig" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_RSDb0cFOEeaFzdpYtpM7Ig" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_RSDb0sFOEeaFzdpYtpM7Ig" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_RSDb08FOEeaFzdpYtpM7Ig" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_RSDb1MFOEeaFzdpYtpM7Ig" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_RSDb1cFOEeaFzdpYtpM7Ig" id="MDM" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_Vs1VCKscEeaYT93ZZIoWgg">
       <baseItem xmi:id="_Vs1VCascEeaYT93ZZIoWgg" id="_epNYIKf9EeatotgV0_lrnA" version="0.1" type="job"/>

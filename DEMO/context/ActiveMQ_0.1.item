@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_g4rF8MH_Eeah6_pR7KIjHA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_g4rF8cH_Eeah6_pR7KIjHA" comment="" name="AMQ_Host" prompt="AMQ_Host?" promptNeeded="false" type="id_String" value="192.168.56.101"/>
+  <contextParameter xmi:id="_g4rF8sH_Eeah6_pR7KIjHA" comment="" name="AMQ_Port" prompt="AMQ_Port?" promptNeeded="false" type="id_String" value="61616"/>
+  <contextParameter xmi:id="_g4rF88H_Eeah6_pR7KIjHA" comment="" name="AMQ_User" prompt="AMQ_User?" promptNeeded="false" type="id_String" value="admin"/>
+  <contextParameter xmi:id="_g4rF9MH_Eeah6_pR7KIjHA" comment="" name="AMQ_Password" prompt="AMQ_Password?" promptNeeded="false" type="id_Password" value="RX/CTwlUNiA="/>
+</talendfile:ContextType>

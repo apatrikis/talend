@@ -138,7 +138,7 @@
   </node>
   <node componentName="tFileOutputXML" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputXML_1" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/app/Talend-Studio-20160704_1411-V6.2.1/workspace/out.xml&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/app/Talend-Studio-20160704_1411-V6.2.1/workspace/out.xml&quot; + DataMasking.createRandomString(5)"/>
     <elementParameter field="CHECK" name="INPUT_IS_DOCUMENT" value="true"/>
     <elementParameter field="COLUMN_LIST" name="DOCUMENT_COL" value="document"/>
     <elementParameter field="TEXT" name="ROW_TAG" value="&quot;row&quot;" show="false"/>

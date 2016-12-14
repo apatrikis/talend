@@ -121,16 +121,16 @@
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMomInput_1" show="false"/>
       <elementParameter field="CHECK" name="KEEPLISTENING" value="false"/>
       <elementParameter field="CHECK" name="STARTSERVER" value="false"/>
-      <elementParameter field="CHECK" name="USEMAX" value="false"/>
-      <elementParameter field="CHECK" name="USEMAX_WITH_TIMEOUT" value="false" show="false"/>
+      <elementParameter field="CHECK" name="USEMAX" value="true"/>
+      <elementParameter field="CHECK" name="USEMAX_WITH_TIMEOUT" value="false"/>
       <elementParameter field="CHECK" name="USE_CONNECTION" value="true"/>
       <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMomConnection_1"/>
       <elementParameter field="CHECK" name="FAILOVER" value="false" show="false"/>
       <elementParameter field="CHECK" name="STATIC" value="false" show="false"/>
       <elementParameter field="TEXT" name="CONNECTION_PARAM_FAILOVER" value="&quot;?randomize=false&quot;" show="false"/>
       <elementParameter field="TEXT" name="CONNECTION_PARAM_STATIC" value="&quot;?transport.maxReconnectDelay=5000&amp;transport.useExponentialBackOff=false&quot;" show="false"/>
-      <elementParameter field="TEXT" name="TIMEOUT" value="1"/>
-      <elementParameter field="TEXT" name="MAXMSG" value="1000" show="false"/>
+      <elementParameter field="TEXT" name="TIMEOUT" value="1" show="false"/>
+      <elementParameter field="TEXT" name="MAXMSG" value="1"/>
       <elementParameter field="CLOSED_LIST" name="SERVER" value="WebSphere" show="false"/>
       <elementParameter field="CHECK" name="USE_SSL" value="false" show="false"/>
       <elementParameter field="LABEL" name="USE_SSL_NOTE" value="Notice: You should use tSetKeysore or JVM arguments to specify keystore or truststore" show="false"/>

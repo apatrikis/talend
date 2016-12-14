@@ -6,7 +6,6 @@
       <contextParameter comment="" name="AMQ_Port" prompt="AMQ_Port?" promptNeeded="false" repositoryContextId="_g4h8AMH_Eeah6_pR7KIjHA" type="id_String" value="61616"/>
       <contextParameter comment="" name="AMQ_User" prompt="AMQ_User?" promptNeeded="false" repositoryContextId="_g4h8AMH_Eeah6_pR7KIjHA" type="id_String" value="admin"/>
       <contextParameter comment="" name="AMQ_Password" prompt="AMQ_Password?" promptNeeded="false" repositoryContextId="_g4h8AMH_Eeah6_pR7KIjHA" type="id_Password" value="RX/CTwlUNiA="/>
-      <contextParameter comment="" name="Queue_In" prompt="Queue_In?" promptNeeded="false" type="id_String" value=""/>
     </context>
     <parameters>
       <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
@@ -92,7 +91,7 @@
       <routinesParameter id="_HKXfQGIZEd26GZmhFZLTPA" name="GetRandomPhoneNum"/>
       <routinesParameter id="_G417gAc-EeKqOMQjhZ_0wQ" name="KeyManagementForSqoop"/>
     </parameters>
-    <node componentName="tMomConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="64">
+    <node componentName="tMomConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="64">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMomConnection_1" show="false"/>
       <elementParameter field="CLOSED_LIST" name="SERVER" value="ActiveMQ"/>
       <elementParameter field="CHECK" name="USE_SSL" value="false"/>
@@ -117,7 +116,7 @@
       <elementParameter field="CLOSED_LIST" name="MQ_SSL_CIPHER" value="SSL_RSA_WITH_NULL_MD5" show="false"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     </node>
-    <node componentName="tMomInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="192">
+    <node componentName="tMomInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="192">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMomInput_1" show="false"/>
       <elementParameter field="CHECK" name="KEEPLISTENING" value="false"/>
       <elementParameter field="CHECK" name="STARTSERVER" value="false"/>
@@ -177,7 +176,7 @@
         <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
     </node>
-    <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="192">
+    <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="192">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
       <elementParameter field="MEMO_JAVA" name="CODE" value="routines.system.Document doc = new routines.system.Document();&#xA;doc.setDocument(org.dom4j.DocumentHelper.parseText(input_row.message));&#xA;&#xA;output_row.document = doc;"/>
       <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -207,7 +206,12 @@
       <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
       <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
     </subjob>
-    <jobletNodes componentName="OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="192">
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <jobletNodes componentName="OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="192">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="OUTPUT_1"/>
       <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
       <elementParameter field="CHECK" name="START" value="false" show="false"/>
@@ -218,6 +222,19 @@
       <elementParameter field="MEMO" name="COMMENT" value=""/>
       <metadata connector="FLOW" name="OUTPUT_1">
         <column comment="" key="false" length="-1" name="document" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
+    <jobletNodes componentName="INPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="64" posY="192" input="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+      <elementParameter field="CHECK" name="START" value="true" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" name="INPUT_1">
+        <column comment="" key="false" length="-1" name="Queue_In" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
     </jobletNodes>
   </model:JobletProcess>

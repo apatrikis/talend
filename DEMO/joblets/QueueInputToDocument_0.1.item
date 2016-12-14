@@ -139,7 +139,7 @@
       <elementParameter field="TABLE" name="SERVERS" show="false"/>
       <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
       <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
-      <elementParameter field="TEXT" name="FROM" value="context.Queue_In"/>
+      <elementParameter field="TEXT" name="FROM" value="(String)globalMap.get(&quot;Queue_In&quot;)"/>
       <elementParameter field="CLOSED_LIST" name="MSGTYPE" value="Queue"/>
       <elementParameter field="TEXT" name="CHANNEL" value="&quot;DC.SVRCONN&quot;" show="false"/>
       <elementParameter field="CLOSED_LIST" name="MESSAGE_BODY_TYPE" value="Text"/>

@@ -200,7 +200,7 @@
         <nodes name="CreatedAt" type="id_Date" xpath="row1/CreatedAt"/>
         <nodes name="ChangedAt" type="id_Date" xpath="row1/ChangedAt"/>
       </inputTrees>
-      <outputTrees activateCondensedTool="true" name="Bestellungen" enableEmptyElement="false">
+      <outputTrees activateCondensedTool="true" name="Bestellungen" allInOne="true" enableEmptyElement="false">
         <nodes name="message" expression="" type="id_Document" xpath="Bestellungen/message" pattern="">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="bestellungen" type="id_String" xpath="Bestellungen.message:/bestellungen" main="true">
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="bestellung" type="id_String" xpath="Bestellungen.message:/bestellungen/bestellung" loop="true" main="true">

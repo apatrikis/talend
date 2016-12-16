@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="NKD_Password" prompt="NKD_Password?" promptNeeded="false" repositoryContextId="_uoefcLVqEeaz1KMgKUrQeQ" type="id_Password" value="YdTnhbqBAdo="/>
-    <contextParameter comment="" name="NKD_Database" prompt="NKD_Database?" promptNeeded="false" repositoryContextId="_uoefcLVqEeaz1KMgKUrQeQ" type="id_String" value="nkd"/>
+    <contextParameter comment="" name="NKD_Password" prompt="NKD_Password?" promptNeeded="false" repositoryContextId="_uoefcLVqEeaz1KMgKUrQeQ" type="id_Password" value="CNlsM2hQx/yKsFREJf9l+Q=="/>
+    <contextParameter comment="" name="NKD_Database" prompt="NKD_Database?" promptNeeded="false" repositoryContextId="_uoefcLVqEeaz1KMgKUrQeQ" type="id_String" value="postgres"/>
     <contextParameter comment="" name="NKD_Schema" prompt="NKD_Schema?" promptNeeded="false" repositoryContextId="_uoefcLVqEeaz1KMgKUrQeQ" type="id_String" value=""/>
     <contextParameter comment="" name="NKD_Port" prompt="NKD_Port?" promptNeeded="false" repositoryContextId="_uoefcLVqEeaz1KMgKUrQeQ" type="id_String" value="5432"/>
-    <contextParameter comment="" name="NKD_Login" prompt="NKD_Login?" promptNeeded="false" repositoryContextId="_uoefcLVqEeaz1KMgKUrQeQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="NKD_Login" prompt="NKD_Login?" promptNeeded="false" repositoryContextId="_uoefcLVqEeaz1KMgKUrQeQ" type="id_String" value="postgres"/>
     <contextParameter comment="" name="NKD_Server" prompt="NKD_Server?" promptNeeded="false" repositoryContextId="_uoefcLVqEeaz1KMgKUrQeQ" type="id_String" value="192.168.56.101"/>
   </context>
   <parameters>

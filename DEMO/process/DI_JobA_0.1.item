@@ -146,7 +146,7 @@
     <elementParameter field="CHECK" name="IS_TRANSACTED" value="false" show="false"/>
     <elementParameter field="TEXT" name="QM" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUEUE" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="IS_USE_MESSAGE_ID" value="true"/>
+    <elementParameter field="CHECK" name="IS_USE_MESSAGE_ID" value="false"/>
     <elementParameter field="TABLE" name="ADDITIONAL_OPTIONS" show="false"/>
     <elementParameter field="CHECK" name="USE_FORMAT" value="false" show="false"/>
     <elementParameter field="TEXT" name="WS_MQ_FORMAT" value="&quot;MQSTR&quot;" show="false"/>
@@ -172,7 +172,6 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMomOutput_1">
       <column defaultValue="" key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="messageid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMomConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="128">
